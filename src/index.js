@@ -6,10 +6,9 @@ import { randomInt } from './util';
 
 const path = require('path');
 const fs = require('fs');
-const {
-    service,
-    domain
-} = JSON.parse(fs.readFileSync(path.resolve(process.argv[2])));
+const configObject = JSON.parse(fs.readFileSync(path.resolve(process.argv[2])));
+const service = configObject.service;
+const domain = configObject.domain;
 const muc = `conference.${domain}`;
 const focus = `focus.${domain}`;
 const roomPrefix = 'jxs-test-' + Date.now() + randomInt(0, 10000);
