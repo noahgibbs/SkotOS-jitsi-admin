@@ -14,13 +14,15 @@ const muc = `conference.${domain}`;
 const focus = `focus.${domain}`;
 const roomPrefix = 'jxs-test-' + Date.now() + randomInt(0, 10000);
 const numberOfRooms = Number(process.argv[3]);
-const numberOfParticipants = Number(process.argv[4]);
-const delay = Number(process.argv[5]) || 0;
+const numberOfParticipants = 1;
+const delay = 0;
 if (!numberOfRooms || isNaN(numberOfRooms)) {
+    console.log("Illegal number of rooms!");
     process.exit(1);
 }
 
 if (!numberOfParticipants || isNaN(numberOfParticipants)) {
+    console.log("Illegal number of participants!");
     process.exit(2);
 }
 
@@ -55,4 +57,3 @@ function cleanup() {
 
 process.on('SIGTERM', cleanup);
 process.on('SIGINT', cleanup);
-

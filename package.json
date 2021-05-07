@@ -1,7 +1,7 @@
 {
-  "name": "jxs",
+  "name": "SkotOS-jitsi-admin",
   "version": "1.0.0",
-  "description": "Jitsi XMPP Stress test",
+  "description": "Jitsi XMPP management server for SkotOS",
   "main": "src/index.js",
   "engines": {
     "node": ">=10"
@@ -23,6 +23,9 @@
     "start": "node dist/main.js",
     "build": "webpack"
   },
-  "author": "Hristo Terezov",
+  "contributors": [
+    "Hristo Terezov",
+    "Noah Gibbs"
+  ],
   "license": "Apache-2.0"
 }
