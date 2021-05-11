@@ -1,0 +1,1649 @@
+{
+  "log": {
+    "entries": [
+      {
+        "_priority": null,
+        "_resourceType": "websocket",
+        "_webSocketMessages": [
+          {
+            "type": "send",
+            "time": 1620689736.2492518,
+            "opcode": 1,
+            "data": "<open to=\"guest.meet.jitsi\" version=\"1.0\" xmlns=\"urn:ietf:params:xml:ns:xmpp-framing\"/>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689736.2823217,
+            "opcode": 1,
+            "data": "<open xmlns='urn:ietf:params:xml:ns:xmpp-framing' from='guest.meet.jitsi' version='1.0' xml:lang='en' id='56fc8fae-4bf5-4530-9e7f-734c68928591'/>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689736.2833867,
+            "opcode": 1,
+            "data": "<stream:features xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams'><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>ANONYMOUS</mechanism></mechanisms></stream:features>"
+          },
+          {
+            "type": "send",
+            "time": 1620689736.2844307,
+            "opcode": 1,
+            "data": "<auth mechanism=\"ANONYMOUS\" xmlns=\"urn:ietf:params:xml:ns:xmpp-sasl\"/>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689736.3413227,
+            "opcode": 1,
+            "data": "<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689736.3423748,
+            "opcode": 1,
+            "data": "<open to=\"guest.meet.jitsi\" version=\"1.0\" xmlns=\"urn:ietf:params:xml:ns:xmpp-framing\"/>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689736.3745537,
+            "opcode": 1,
+            "data": "<open xmlns='urn:ietf:params:xml:ns:xmpp-framing' from='guest.meet.jitsi' version='1.0' xml:lang='en' id='76abbd99-7a75-4690-a454-d0148d1333aa'/>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689736.3749168,
+            "opcode": 1,
+            "data": "<stream:features xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams'><ver xmlns='urn:xmpp:features:rosterver'/><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'><required/></bind><session xmlns='urn:ietf:params:xml:ns:xmpp-session'><optional/></session><c xmlns='http://jabber.org/protocol/caps' ver='ZBWApSGFMsTZkuVThHtyU5xv1Mk=' node='http://prosody.im' hash='sha-1'/></stream:features>"
+          },
+          {
+            "type": "send",
+            "time": 1620689736.3755898,
+            "opcode": 1,
+            "data": "<iq id=\"_bind_auth_2\" type=\"set\" xmlns=\"jabber:client\"><bind xmlns=\"urn:ietf:params:xml:ns:xmpp-bind\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689736.4082007,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' id='_bind_auth_2' type='result'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'><jid>033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf</jid></bind></iq>"
+          },
+          {
+            "type": "send",
+            "time": 1620689736.4087548,
+            "opcode": 1,
+            "data": "<iq id=\"_session_auth_2\" type=\"set\" xmlns=\"jabber:client\"><session xmlns=\"urn:ietf:params:xml:ns:xmpp-session\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689736.4394717,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' id='_session_auth_2' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689736.4413848,
+            "opcode": 1,
+            "data": "<iq id=\"7098b514-2128-491d-9cfd-e7bcd369906b:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><services xmlns=\"urn:xmpp:extdisco:2\"/></iq>"
+          },
+          {
+            "type": "send",
+            "time": 1620689736.4419198,
+            "opcode": 1,
+            "data": "<iq from=\"033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf\" id=\"06a5e1b2-7de0-4e1f-b575-1e2f5b0f06a2:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><query xmlns=\"http://jabber.org/protocol/disco#info\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689736.472252,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='error' id='7098b514-2128-491d-9cfd-e7bcd369906b:sendIQ'><error type='cancel'><service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/></error></iq>"
+          },
+          {
+            "type": "send",
+            "time": 1620689736.4730217,
+            "opcode": 1,
+            "data": "<iq id=\"3b392ec5-b0c3-43ff-9209-43ef43910593:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><services xmlns=\"urn:xmpp:extdisco:1\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689736.4746857,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='06a5e1b2-7de0-4e1f-b575-1e2f5b0f06a2:sendIQ'><query xmlns='http://jabber.org/protocol/disco#info'><identity name='Prosody' category='server' type='im'/><identity name='Prosody' category='pubsub' type='pep'/><identity name='speakerstats.meet.jitsi' category='component' type='speakerstats'/><identity name='Prosody PubSub Service' category='pubsub' type='service'/><identity name='conferenceduration.meet.jitsi' category='component' type='conference_duration'/><feature var='urn:xmpp:ping'/><feature var='msgoffline'/><feature var='jabber:iq:private'/><feature var='http://jabber.org/protocol/disco#info'/><feature var='http://jabber.org/protocol/disco#items'/><feature var='urn:xmpp:time'/><feature var='jabber:iq:time'/><feature var='jabber:iq:version'/><feature var='http://jabber.org/protocol/pubsub#publish'/><feature var='http://jabber.org/protocol/pubsub'/><feature var='http://jabber.org/protocol/pubsub#retrieve-subscriptions'/><feature var='http://jabber.org/protocol/pubsub#delete-items'/><feature var='http://jabber.org/protocol/pubsub#purge-nodes'/><feature var='http://jabber.org/protocol/pubsub#instant-nodes'/><feature var='http://jabber.org/protocol/pubsub#subscription-options'/><feature var='http://jabber.org/protocol/pubsub#persistent-items'/><feature var='http://jabber.org/protocol/pubsub#retract-items'/><feature var='http://jabber.org/protocol/pubsub#delete-nodes'/><feature var='http://jabber.org/protocol/pubsub#retrieve-default'/><feature var='http://jabber.org/protocol/pubsub#member-affiliation'/><feature var='http://jabber.org/protocol/pubsub#access-open'/><feature var='http://jabber.org/protocol/pubsub#publisher-affiliation'/><feature var='http://jabber.org/protocol/pubsub#modify-affiliations'/><feature var='http://jabber.org/protocol/pubsub#create-and-configure'/><feature var='http://jabber.org/protocol/pubsub#item-ids'/><feature var='http://jabber.org/protocol/pubsub#publish-options'/><feature var='http://jabber.org/protocol/pubsub#outcast-affiliation'/><feature var='http://jabber.org/protocol/pubsub#create-nodes'/><feature var='http://jabber.org/protocol/pubsub#config-node'/><feature var='http://jabber.org/protocol/pubsub#meta-data'/><feature var='http://jabber.org/protocol/pubsub#multi-items'/><feature var='http://jabber.org/protocol/pubsub#subscribe'/><feature var='http://jabber.org/protocol/pubsub#retrieve-items'/><feature var='vcard-temp'/><feature var='jabber:iq:last'/><feature var='jabber:iq:register'/><feature var='http://jabber.org/protocol/commands'/><feature var='jabber:iq:roster'/></query></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689736.5055928,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='error' id='3b392ec5-b0c3-43ff-9209-43ef43910593:sendIQ'><error type='cancel'><service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/></error></iq>"
+          },
+          {
+            "type": "send",
+            "time": 1620689736.9571948,
+            "opcode": 1,
+            "data": "<iq id=\"b4235abf-dd0e-402b-9395-991ec4a9f62f:sendIQ\" to=\"focus.meet.jitsi\" type=\"set\" xmlns=\"jabber:client\"><conference machine-uid=\"5bbf9a67292309dcbe3ba19974dfa1c7\" room=\"newroom@muc.meet.jitsi\" session-id=\"c743d660-216a-43d8-b55c-7e5f7fc184fd\" xmlns=\"http://jitsi.org/protocol/focus\"><property name=\"disableRtx\" value=\"false\"/><property name=\"startAudioMuted\" value=\"10\"/><property name=\"startVideoMuted\" value=\"10\"/><property name=\"stereo\" value=\"false\"/></conference></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689737.0078487,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='focus.meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='b4235abf-dd0e-402b-9395-991ec4a9f62f:sendIQ'><conference xmlns='http://jitsi.org/protocol/focus' identity='skotosadmin@meet.jitsi' focusjid='focus@auth.meet.jitsi' session-id='c743d660-216a-43d8-b55c-7e5f7fc184fd' ready='true' room='newroom@muc.meet.jitsi'><property name='authentication' value='true'/><property name='externalAuth' value='false'/></conference></iq>"
+          },
+          {
+            "type": "send",
+            "time": 1620689737.0144067,
+            "opcode": 1,
+            "data": "<presence to=\"newroom@muc.meet.jitsi/033a2eb4\" xmlns=\"jabber:client\"><x xmlns=\"http://jabber.org/protocol/muc\"/><stats-id>Antonetta-6XB</stats-id><videomuted xmlns=\"http://jitsi.org/jitmeet/video\">false</videomuted><c hash=\"sha-1\" node=\"http://jitsi.org/jitsimeet\" ver=\"ZYz/Bk0YZmQuoeSFs25VOxJYXf4=\" xmlns=\"http://jabber.org/protocol/caps\"/><features><feature var=\"https://jitsi.org/meet/e2ee\"/></features><jitsi_participant_codecType>vp8</jitsi_participant_codecType><nick xmlns=\"http://jabber.org/protocol/nick\">skott</nick><jitsi_participant_e2ee.idKey>SFKq7m63h4El7t9ph5eLTyx2vghiby2EYhI20HgGgmQ</jitsi_participant_e2ee.idKey><audiomuted xmlns=\"http://jitsi.org/jitmeet/audio\">false</audiomuted><videoType xmlns=\"http://jitsi.org/jitmeet/video\">camera</videoType></presence>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689737.0493429,
+            "opcode": 1,
+            "data": "<presence xmlns='jabber:client' from='newroom@muc.meet.jitsi/focus' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' id='Glpzp-157685'><etherpad xmlns='http://jitsi.org/jitmeet/etherpad'>newroom</etherpad><versions xmlns='http://jitsi.org/jitmeet'><component name='focus'>1.0.740</component></versions><conference-properties xmlns='http://jitsi.org/protocol/focus'><property key='support-terminate-restart' value='true'/></conference-properties><c xmlns='http://jabber.org/protocol/caps' ver='Lg0vhCNhxjoeKJi2/hukdsizNWA=' node='http://jitsi.org/jicofo' hash='sha-1'/><x xmlns='http://jabber.org/protocol/muc#user'><item role='moderator' jid='focus@auth.meet.jitsi/focus' affiliation='owner'/></x></presence>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689737.0541499,
+            "opcode": 1,
+            "data": "<presence xmlns='jabber:client' from='newroom@muc.meet.jitsi/033a2eb4' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf'><stats-id>Antonetta-6XB</stats-id><videomuted xmlns='http://jitsi.org/jitmeet/video'>false</videomuted><c xmlns='http://jabber.org/protocol/caps' ver='ZYz/Bk0YZmQuoeSFs25VOxJYXf4=' node='http://jitsi.org/jitsimeet' hash='sha-1'/><features><feature var='https://jitsi.org/meet/e2ee'/></features><jitsi_participant_codecType>vp8</jitsi_participant_codecType><nick xmlns='http://jabber.org/protocol/nick'>skott</nick><jitsi_participant_e2ee.idKey>SFKq7m63h4El7t9ph5eLTyx2vghiby2EYhI20HgGgmQ</jitsi_participant_e2ee.idKey><audiomuted xmlns='http://jitsi.org/jitmeet/audio'>false</audiomuted><videoType xmlns='http://jitsi.org/jitmeet/video'>camera</videoType><x xmlns='http://jabber.org/protocol/muc#user'><status code='100'/><item role='participant' jid='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' affiliation='none'/><status code='110'/></x></presence>"
+          },
+          {
+            "type": "send",
+            "time": 1620689737.0902867,
+            "opcode": 1,
+            "data": "<iq id=\"b96b600d-7f90-45bd-bafc-8bde23af8e11:sendIQ\" to=\"newroom@muc.meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><query xmlns=\"http://jabber.org/protocol/disco#info\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689737.0930529,
+            "opcode": 1,
+            "data": "<message xmlns='jabber:client' from='conferenceduration.meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf'><json-message xmlns='http://jitsi.org/jitmeet'>{&quot;type&quot;:&quot;conference_duration&quot;,&quot;created_timestamp&quot;:1620689737000}</json-message></message>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689737.0960689,
+            "opcode": 1,
+            "data": "<message xmlns='jabber:client' from='newroom@muc.meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='groupchat'><subject/></message>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689737.0985758,
+            "opcode": 1,
+            "data": "<presence xmlns='jabber:client' from='newroom@muc.meet.jitsi/033a2eb4' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf'><stats-id>Antonetta-6XB</stats-id><videomuted xmlns='http://jitsi.org/jitmeet/video'>false</videomuted><c xmlns='http://jabber.org/protocol/caps' ver='ZYz/Bk0YZmQuoeSFs25VOxJYXf4=' node='http://jitsi.org/jitsimeet' hash='sha-1'/><features><feature var='https://jitsi.org/meet/e2ee'/></features><jitsi_participant_codecType>vp8</jitsi_participant_codecType><nick xmlns='http://jabber.org/protocol/nick'>skott</nick><jitsi_participant_e2ee.idKey>SFKq7m63h4El7t9ph5eLTyx2vghiby2EYhI20HgGgmQ</jitsi_participant_e2ee.idKey><audiomuted xmlns='http://jitsi.org/jitmeet/audio'>false</audiomuted><videoType xmlns='http://jitsi.org/jitmeet/video'>camera</videoType><x xmlns='http://jabber.org/protocol/muc#user'><item role='moderator' jid='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' affiliation='owner'><actor nick='focus'/></item><status code='110'/></x></presence>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689737.1385267,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='newroom@muc.meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='b96b600d-7f90-45bd-bafc-8bde23af8e11:sendIQ'><query xmlns='http://jabber.org/protocol/disco#info'><feature var='muc_unmoderated'/><feature var='muc_nonanonymous'/><feature var='http://jabber.org/protocol/muc#request'/><identity name='newroom' category='conference' type='text'/><feature var='muc_unsecured'/><feature var='muc_open'/><feature var='muc_temporary'/><feature var='muc_hidden'/><feature var='jabber:iq:register'/><feature var='http://jabber.org/protocol/muc'/><feature var='http://jabber.org/protocol/muc#stable_id'/><feature var='http://jabber.org/protocol/muc#self-ping-optimization'/><x xmlns='jabber:x:data' type='result'><field var='FORM_TYPE' type='hidden'><value>http://jabber.org/protocol/muc#roominfo</value></field><field var='muc#roomconfig_changesubject' type='boolean'/><field var='muc#roomconfig_roomname' label='Title' type='text-single'/><field var='{http://prosody.im/protocol/muc}roomconfig_allowmemberinvites' label='Allow members to invite new members' type='boolean'><value>0</value></field><field var='muc#roominfo_occupants' label='Number of occupants' type='text-single'><value>2</value></field><field var='muc#roominfo_description' label='Description' type='text-single'><value/></field><field var='muc#roominfo_meetingId' label='The meeting unique id.' type='text-single'><value>031239f4-7182-4e4f-bb13-1e9bdb0458be</value></field><field var='muc#roominfo_lang' type='text-single'><value/></field></x></query></iq>"
+          },
+          {
+            "type": "send",
+            "time": 1620689746.4416857,
+            "opcode": 1,
+            "data": "<iq id=\"cb831ecf-3058-470b-bc34-1324976563d4:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689746.4742348,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='cb831ecf-3058-470b-bc34-1324976563d4:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689756.4415379,
+            "opcode": 1,
+            "data": "<iq id=\"3bdad569-6a52-4b0e-b496-1a2030237b1e:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689756.4722478,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='3bdad569-6a52-4b0e-b496-1a2030237b1e:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689766.4415429,
+            "opcode": 1,
+            "data": "<iq id=\"d3b0c53e-693f-4df2-add4-4cb288921c17:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689766.4739387,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='d3b0c53e-693f-4df2-add4-4cb288921c17:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689776.4416058,
+            "opcode": 1,
+            "data": "<iq id=\"795a428e-50ae-4757-89e8-d6a9693f6a03:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689776.4733858,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='795a428e-50ae-4757-89e8-d6a9693f6a03:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689786.4415128,
+            "opcode": 1,
+            "data": "<iq id=\"1d1a09ff-ff69-4174-8844-f899fa311881:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689786.4762537,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='1d1a09ff-ff69-4174-8844-f899fa311881:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689796.4416008,
+            "opcode": 1,
+            "data": "<iq id=\"98975342-bdff-42ef-9d81-64c9d161206f:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689796.4736378,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='98975342-bdff-42ef-9d81-64c9d161206f:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689806.4455428,
+            "opcode": 1,
+            "data": "<iq id=\"9a6f8e82-a22e-4fb3-a271-b54f74fab7a3:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689806.4767468,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='9a6f8e82-a22e-4fb3-a271-b54f74fab7a3:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689816.4422398,
+            "opcode": 1,
+            "data": "<iq id=\"834cb4e4-0276-4607-8c6f-5247d91983dc:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689816.4747577,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='834cb4e4-0276-4607-8c6f-5247d91983dc:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689826.4414887,
+            "opcode": 1,
+            "data": "<iq id=\"08f7bb18-1fab-43ce-bf8e-6916351ea868:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689826.4761667,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='08f7bb18-1fab-43ce-bf8e-6916351ea868:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689836.4416459,
+            "opcode": 1,
+            "data": "<iq id=\"9a3e723c-326a-4569-a427-7483926fe5a6:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689836.4748807,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='9a3e723c-326a-4569-a427-7483926fe5a6:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689846.4442399,
+            "opcode": 1,
+            "data": "<iq id=\"e28d335b-887d-4bab-a44c-1b7ff126ddf1:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689846.6214988,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='e28d335b-887d-4bab-a44c-1b7ff126ddf1:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689856.4415908,
+            "opcode": 1,
+            "data": "<iq id=\"d79361ad-381a-4523-9a5a-32e833230dc6:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689856.475237,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='d79361ad-381a-4523-9a5a-32e833230dc6:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689866.4415147,
+            "opcode": 1,
+            "data": "<iq id=\"b47e7c27-134b-4300-9719-061a8905278c:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689866.4748187,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='b47e7c27-134b-4300-9719-061a8905278c:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689876.4416468,
+            "opcode": 1,
+            "data": "<iq id=\"326a318b-df90-4dea-8885-5d8cc1641264:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689876.4751458,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='326a318b-df90-4dea-8885-5d8cc1641264:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689886.4415598,
+            "opcode": 1,
+            "data": "<iq id=\"144de8cf-a148-455f-860e-4241cfab376b:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689886.4764857,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='144de8cf-a148-455f-860e-4241cfab376b:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689896.4415078,
+            "opcode": 1,
+            "data": "<iq id=\"78307f50-1066-4d69-afdb-896ef7c83600:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689896.4730988,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='78307f50-1066-4d69-afdb-896ef7c83600:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689906.4415038,
+            "opcode": 1,
+            "data": "<iq id=\"525fa702-e00c-45e4-ad1d-8b759b8d7dc6:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689906.476359,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='525fa702-e00c-45e4-ad1d-8b759b8d7dc6:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689916.4414337,
+            "opcode": 1,
+            "data": "<iq id=\"7aca574e-44dc-4663-9bdc-f4ab535b4bc6:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689916.4729908,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='7aca574e-44dc-4663-9bdc-f4ab535b4bc6:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689926.4415507,
+            "opcode": 1,
+            "data": "<iq id=\"02d61cee-f62a-40d7-a1e7-79c5371b2e80:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689926.4728377,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='02d61cee-f62a-40d7-a1e7-79c5371b2e80:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689936.4415348,
+            "opcode": 1,
+            "data": "<iq id=\"625c93e6-288b-4f7c-b90f-20ece8efcdb6:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689936.4769337,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='625c93e6-288b-4f7c-b90f-20ece8efcdb6:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689946.4416459,
+            "opcode": 1,
+            "data": "<iq id=\"9ea14aa4-9aa1-4997-b76f-b1e3f17d80f8:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689946.4735897,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='033a2eb4-bf00-4b2a-a4b9-a88a13e95019@guest.meet.jitsi/leN0LMjf' type='result' id='9ea14aa4-9aa1-4997-b76f-b1e3f17d80f8:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689951.2940338,
+            "opcode": 1,
+            "data": "<presence type=\"unavailable\" xmlns=\"jabber:client\"/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689951.2941418,
+            "opcode": 1,
+            "data": "<close xmlns=\"urn:ietf:params:xml:ns:xmpp-framing\"/>"
+          },
+          {
+            "type": "error",
+            "time": 1620689951.3366919,
+            "opcode": -1,
+            "data": "Data frame received after close"
+          }
+        ],
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "wss://meet.testing-14.madrubyscience.com/xmpp-websocket?room=newroom",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Origin",
+              "value": "https://meet.testing-14.madrubyscience.com"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Host",
+              "value": "meet.testing-14.madrubyscience.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Sec-WebSocket-Key",
+              "value": "4VsrO5mXf+IB2iQPprHRyg=="
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+            },
+            {
+              "name": "Upgrade",
+              "value": "websocket"
+            },
+            {
+              "name": "Sec-WebSocket-Extensions",
+              "value": "permessage-deflate; client_max_window_bits"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Cookie",
+              "value": "biscuit=test; user=skott; pass=1103122875"
+            },
+            {
+              "name": "Connection",
+              "value": "Upgrade"
+            },
+            {
+              "name": "Sec-WebSocket-Version",
+              "value": "13"
+            },
+            {
+              "name": "Sec-WebSocket-Protocol",
+              "value": "xmpp"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "room",
+              "value": "newroom"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "biscuit",
+              "value": "test",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "user",
+              "value": "skott",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "pass",
+              "value": "1103122875",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 689,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 101,
+          "statusText": "Switching Protocols",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Mon, 10 May 2021 23:35:36 GMT"
+            },
+            {
+              "name": "Sec-WebSocket-Accept",
+              "value": "jLBoOF/Js1PShOlJSkpqQgGueis="
+            },
+            {
+              "name": "Server",
+              "value": "nginx/1.14.2"
+            },
+            {
+              "name": "Connection",
+              "value": "upgrade"
+            },
+            {
+              "name": "Sec-WebSocket-Protocol",
+              "value": "xmpp"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=63072000"
+            },
+            {
+              "name": "Upgrade",
+              "value": "websocket"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "x-unknown",
+            "compression": 263
+          },
+          "redirectURL": "",
+          "headersSize": 263,
+          "bodySize": -263,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "",
+        "startedDateTime": "2021-05-10T23:35:36.210Z",
+        "time": 215126.67300004978,
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 215126.55499996617,
+          "receive": 0.11800008360296488,
+          "_blocked_queueing": -1
+        }
+      },
+      {
+        "_initiator": {
+        },
+        "_priority": "High",
+        "_resourceType": "fetch",
+        "cache": {},
+        "connection": "1323475",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://meet.testing-14.madrubyscience.com/xmpp-websocket?room=newroom",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Host",
+              "value": "meet.testing-14.madrubyscience.com"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\""
+            },
+            {
+              "name": "DNT",
+              "value": "1"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "empty"
+            },
+            {
+              "name": "Referer",
+              "value": "https://meet.testing-14.madrubyscience.com/NewRoom"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Cookie",
+              "value": "biscuit=test; user=skott; pass=1103122875"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "room",
+              "value": "newroom"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "biscuit",
+              "value": "test",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "user",
+              "value": "skott",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "pass",
+              "value": "1103122875",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 618,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Server",
+              "value": "nginx/1.14.2"
+            },
+            {
+              "name": "Date",
+              "value": "Mon, 10 May 2021 23:36:56 GMT"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=63072000"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 169,
+            "mimeType": "text/html",
+            "compression": 6
+          },
+          "redirectURL": "",
+          "headersSize": 313,
+          "bodySize": 163,
+          "_transferSize": 476,
+          "_error": null
+        },
+        "serverIPAddress": "139.162.204.116",
+        "startedDateTime": "2021-05-10T23:36:56.239Z",
+        "time": 101.59399998638034,
+        "timings": {
+          "blocked": 1.7570000066012144,
+          "dns": 0.018000000000000016,
+          "ssl": 33.428,
+          "connect": 63.619,
+          "send": 0.22700000000000387,
+          "wait": 35.42199997514486,
+          "receive": 0.5510000046342611,
+          "_blocked_queueing": 1.4380000066012144
+        }
+      },
+      {
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "232",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 875
+              },
+              {
+                "functionName": "_keepAliveAndCheckShard",
+                "scriptId": "240",
+                "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                "lineNumber": 0,
+                "columnNumber": 173370
+              },
+              {
+                "functionName": "",
+                "scriptId": "240",
+                "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                "lineNumber": 0,
+                "columnNumber": 173140
+              }
+            ],
+            "parent": {
+              "description": "setTimeout",
+              "callFrames": [
+                {
+                  "functionName": "_maybeStartWSKeepAlive",
+                  "scriptId": "240",
+                  "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                  "lineNumber": 0,
+                  "columnNumber": 173120
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "240",
+                  "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                  "lineNumber": 0,
+                  "columnNumber": 173180
+                }
+              ],
+              "parent": {
+                "description": "Promise.then",
+                "callFrames": [
+                  {
+                    "functionName": "",
+                    "scriptId": "240",
+                    "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                    "lineNumber": 0,
+                    "columnNumber": 173166
+                  }
+                ],
+                "parent": {
+                  "description": "setTimeout",
+                  "callFrames": [
+                    {
+                      "functionName": "_maybeStartWSKeepAlive",
+                      "scriptId": "240",
+                      "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                      "lineNumber": 0,
+                      "columnNumber": 173120
+                    },
+                    {
+                      "functionName": "_stropheConnectionCb",
+                      "scriptId": "240",
+                      "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                      "lineNumber": 0,
+                      "columnNumber": 171384
+                    },
+                    {
+                      "functionName": "_changeConnectStatus",
+                      "scriptId": "240",
+                      "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                      "lineNumber": 0,
+                      "columnNumber": 33455
+                    },
+                    {
+                      "functionName": "_onSessionResultIQ",
+                      "scriptId": "240",
+                      "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                      "lineNumber": 0,
+                      "columnNumber": 41567
+                    },
+                    {
+                      "functionName": "run",
+                      "scriptId": "240",
+                      "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                      "lineNumber": 0,
+                      "columnNumber": 26829
+                    },
+                    {
+                      "functionName": "",
+                      "scriptId": "240",
+                      "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                      "lineNumber": 0,
+                      "columnNumber": 35267
+                    },
+                    {
+                      "functionName": "forEachChild",
+                      "scriptId": "240",
+                      "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                      "lineNumber": 0,
+                      "columnNumber": 18491
+                    },
+                    {
+                      "functionName": "_dataRecv",
+                      "scriptId": "240",
+                      "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                      "lineNumber": 0,
+                      "columnNumber": 35116
+                    },
+                    {
+                      "functionName": "_onMessage",
+                      "scriptId": "240",
+                      "url": "https://meet.testing-14.madrubyscience.com/libs/lib-jitsi-meet.min.js?v=4900",
+                      "lineNumber": 0,
+                      "columnNumber": 64354
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "_priority": "High",
+        "_resourceType": "fetch",
+        "cache": {},
+        "connection": "1324630",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://meet.testing-14.madrubyscience.com/xmpp-websocket?room=newroom",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Host",
+              "value": "meet.testing-14.madrubyscience.com"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\""
+            },
+            {
+              "name": "DNT",
+              "value": "1"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "empty"
+            },
+            {
+              "name": "Referer",
+              "value": "https://meet.testing-14.madrubyscience.com/NewRoom"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Cookie",
+              "value": "biscuit=test; user=skott; pass=1103122875"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "room",
+              "value": "newroom"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "biscuit",
+              "value": "test",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "user",
+              "value": "skott",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "pass",
+              "value": "1103122875",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 618,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Server",
+              "value": "nginx/1.14.2"
+            },
+            {
+              "name": "Date",
+              "value": "Mon, 10 May 2021 23:38:43 GMT"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=63072000"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 169,
+            "mimeType": "text/html",
+            "compression": 6
+          },
+          "redirectURL": "",
+          "headersSize": 313,
+          "bodySize": 163,
+          "_transferSize": 476,
+          "_error": null
+        },
+        "serverIPAddress": "139.162.204.116",
+        "startedDateTime": "2021-05-10T23:38:43.346Z",
+        "time": 105.63600005336106,
+        "timings": {
+          "blocked": 1.86500003721565,
+          "dns": 0.015000000000000013,
+          "ssl": 31.882000000000005,
+          "connect": 68.771,
+          "send": 0.17600000000000193,
+          "wait": 34.09300003568828,
+          "receive": 0.7159999804571271,
+          "_blocked_queueing": 1.33500003721565
+        }
+      },
+      {
+        "_initiator": {
+          "type": "other"
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "document",
+        "cache": {},
+        "pageref": "page_3",
+        "request": {
+          "method": "GET",
+          "url": "https://meet.testing-14.madrubyscience.com/NewRoom",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Host",
+              "value": "meet.testing-14.madrubyscience.com"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "DNT",
+              "value": "1"
+            },
+            {
+              "name": "Upgrade-Insecure-Requests",
+              "value": "1"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+            },
+            {
+              "name": "Service-Worker-Navigation-Preload",
+              "value": "true"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "navigate"
+            },
+            {
+              "name": "Sec-Fetch-User",
+              "value": "?1"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "document"
+            },
+            {
+              "name": "Referer",
+              "value": "https://meet.testing-14.madrubyscience.com/"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Cookie",
+              "value": "biscuit=test; user=skott; pass=1103122875"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "biscuit",
+              "value": "test",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "user",
+              "value": "skott",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "pass",
+              "value": "1103122875",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 847,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Server",
+              "value": "nginx/1.14.2"
+            },
+            {
+              "name": "Date",
+              "value": "Mon, 10 May 2021 23:39:11 GMT"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 58319,
+            "mimeType": "text/html",
+            "compression": 58587,
+            "text": "<html itemscope itemtype=\"http://schema.org/Product\" prefix=\"og: http://ogp.me/ns#\" xmlns=\"http://www.w3.org/1999/html\">\n  <head>\n    \n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\">\n    <meta name=\"theme-color\" content=\"#2A3A4B\">\n    <base href=\"/\" />\n\n\n    <link rel=\"apple-touch-icon\" href=\"images/apple-touch-icon.png\">\n    <link rel=\"stylesheet\" href=\"css/all.css?v=4900\">\n    <link rel=\"manifest\" id=\"manifest-placeholder\">\n\n    <script>\n        // Dynamically generate the manifest location URL. It must be served from the document origin, and we may have\n        // the base pointing to the CDN. This way we can generate a full URL which will bypass the base.\n        document.querySelector('#manifest-placeholder').setAttribute('href', window.location.origin + '/manifest.json');\n\n        document.addEventListener('DOMContentLoaded', () => {\n            if (!JitsiMeetJS.app) {\n                return;\n            }\n\n            JitsiMeetJS.app.renderEntryPoint({\n                Component: JitsiMeetJS.app.entryPoints.APP\n            })\n\n            const isElectron = navigator.userAgent.includes('Electron');\n            const shouldRegisterWorker = !isElectron && 'serviceWorker' in navigator;\n\n            if (shouldRegisterWorker) {\n                navigator.serviceWorker\n                    .register(window.location.origin + '/pwa-worker.js')\n                    .then(reg => {\n                        console.log('Service worker registered.', reg);\n                    })\n                    .catch(err => {\n                        console.log(err);\n                    });\n            }\n        });\n    </script>\n    <script>\n        // IE11 and earlier can be identified via their user agent and be\n        // redirected to a page that is known to have no newer js syntax.\n        if (window.navigator.userAgent.match(/(MSIE|Trident)/)) {\n            var roomName = encodeURIComponent(window.location.pathname);\n            window.location.href = \"static/recommendedBrowsers.html\" + \"?room=\" + roomName;\n        }\n\n        window.indexLoadedTime = window.performance.now();\n        console.log(\"(TIME) index.html loaded:\\t\", indexLoadedTime);\n        // XXX the code below listeners for errors and displays an error message\n        // in the document body when any of the required files fails to load.\n        // The intention is to prevent from displaying broken page.\n        var criticalFiles = [\n            \"config.js\",\n            \"utils.js\",\n            \"do_external_connect.js\",\n            \"interface_config.js\",\n            \"logging_config.js\",\n            \"lib-jitsi-meet.min.js\",\n            \"app.bundle.min.js\",\n            \"all.css?v=4900\"\n        ];\n        var loadErrHandler = function(e) {\n            var target = e.target;\n            // Error on <script> and <link>(CSS)\n            // <script> will have .src and <link> .href\n            var fileRef = (target.src ? target.src : target.href);\n            if ((\"SCRIPT\" === target.tagName || \"LINK\" === target.tagName)\n                && criticalFiles.some(\n                    function(file) { return fileRef.indexOf(file) !== -1 })) {\n                window.onload = function() {\n                    // The whole complex part below implements page reloads with\n                    // \"exponential backoff\". The retry attempt is passes as\n                    // \"rCounter\" query parameter\n                    var href = window.location.href;\n\n                    var retryMatch = href.match(/.+(\\?|&)rCounter=(\\d+)/);\n                    var retryCountStr = retryMatch ? retryMatch[2] : \"0\";\n                    var retryCount = Number.parseInt(retryCountStr);\n\n                    if (retryMatch == null) {\n                        var separator = href.indexOf(\"?\") === -1 ? \"?\" : \"&\";\n                        var hashIdx = href.indexOf(\"#\");\n\n                        if (hashIdx === -1) {\n                            href += separator + \"rCounter=1\";\n                        } else {\n                            var hashPart = href.substr(hashIdx);\n\n                            href = href.substr(0, hashIdx)\n                                + separator + \"rCounter=1\" + hashPart;\n                        }\n                    } else {\n                        var separator = retryMatch[1];\n\n                        href = href.replace(\n                            /(\\?|&)rCounter=(\\d+)/,\n                            separator + \"rCounter=\" + (retryCount + 1));\n                    }\n\n                    var delay = Math.pow(2, retryCount) * 2000;\n                    if (isNaN(delay) || delay < 2000 || delay > 60000)\n                        delay = 10000;\n\n                    var showMoreText = \"show more\";\n                    var showLessText = \"show less\";\n\n                    document.body.innerHTML\n                        = \"<div style='\"\n                        + \"position: absolute;top: 50%;left: 50%;\"\n                        + \"text-align: center;\"\n                        + \"font-size: medium;\"\n                        + \"font-weight: 400;\"\n                        + \"transform: translate(-50%, -50%)'>\"\n                        + \"Uh oh! We couldn't fully download everything we needed :(\"\n                        + \"<br/> \"\n                        + \"We will try again shortly. In the mean time, check for problems with your Internet connection!\"\n                        + \"<br/><br/> \"\n                        + \"<div id='moreInfo' style='\"\n                        + \"display: none;'>\" + \"Missing \" + fileRef\n                        + \"<br/><br/></div>\"\n                        + \"<a id='showMore' style='\"\n                        + \"text-decoration: underline;\"\n                        + \"font-size:small;\"\n                        + \"cursor: pointer'>\" + showMoreText + \"</a>\"\n                        + \"&nbsp;&nbsp;&nbsp;\"\n                        + \"<a id ='reloadLink' style='\"\n                        + \"text-decoration: underline;\"\n                        + \"font-size:small;\"\n                        + \"'>reload now</a>\"\n                        + \"</div>\";\n\n                    var reloadLink = document.getElementById('reloadLink');\n                    reloadLink.setAttribute('href', href);\n\n                    var showMoreElem = document.getElementById(\"showMore\");\n                    showMoreElem.addEventListener('click', function () {\n                            var moreInfoElem\n                                    = document.getElementById(\"moreInfo\");\n\n                            if (showMoreElem.innerHTML === showMoreText) {\n                                moreInfoElem.setAttribute(\n                                    \"style\",\n                                    \"display: block;\"\n                                    + \"color:#FF991F;\"\n                                    + \"font-size:small;\"\n                                    + \"user-select:text;\");\n                                showMoreElem.innerHTML = showLessText;\n                            }\n                            else {\n                                moreInfoElem.setAttribute(\n                                    \"style\", \"display: none;\");\n                                showMoreElem.innerHTML = showMoreText;\n                            }\n                        });\n\n                    window.setTimeout(\n                        function () { window.location.replace(href); }, delay);\n\n                    // Call extra handler if defined.\n                    if (typeof postLoadErrorHandler === \"function\") {\n                        postLoadErrorHandler(fileRef);\n                    }\n                };\n                window.removeEventListener(\n                    'error', loadErrHandler, true /* capture phase */);\n            }\n        };\n        window.addEventListener(\n            'error', loadErrHandler, true /* capture phase type of listener */);\n    </script>\n    <script>/* eslint-disable no-unused-vars, no-var */\n\nvar config = {\n    // Connection\n    //\n\n    hosts: {\n        // XMPP domain.\n        domain: 'jitsi-meet.example.com',\n\n        // When using authentication, domain for guest users.\n        // anonymousdomain: 'guest.example.com',\n\n        // Domain for authenticated users. Defaults to <domain>.\n        // authdomain: 'jitsi-meet.example.com',\n\n        // Focus component domain. Defaults to focus.<domain>.\n        // focus: 'focus.jitsi-meet.example.com',\n\n        // XMPP MUC domain. FIXME: use XEP-0030 to discover it.\n        muc: 'conference.jitsi-meet.example.com'\n    },\n\n    // BOSH URL. FIXME: use XEP-0156 to discover it.\n    bosh: '//jitsi-meet.example.com/http-bind',\n\n    // Websocket URL\n    // websocket: 'wss://jitsi-meet.example.com/xmpp-websocket',\n\n    // The name of client node advertised in XEP-0115 'c' stanza\n    clientNode: 'http://jitsi.org/jitsimeet',\n\n    // The real JID of focus participant - can be overridden here\n    // Do not change username - FIXME: Make focus username configurable\n    // https://github.com/jitsi/jitsi-meet/issues/7376\n    // focusUserJid: 'focus@auth.jitsi-meet.example.com',\n\n\n    // Testing / experimental features.\n    //\n\n    testing: {\n        // Disables the End to End Encryption feature. Useful for debugging\n        // issues related to insertable streams.\n        // disableE2EE: false,\n\n        // P2P test mode disables automatic switching to P2P when there are 2\n        // participants in the conference.\n        p2pTestMode: false\n\n        // Enables the test specific features consumed by jitsi-meet-torture\n        // testMode: false\n\n        // Disables the auto-play behavior of *all* newly created video element.\n        // This is useful when the client runs on a host with limited resources.\n        // noAutoPlayVideo: false\n\n        // Enable / disable 500 Kbps bitrate cap on desktop tracks. When enabled,\n        // simulcast is turned off for the desktop share. If presenter is turned\n        // on while screensharing is in progress, the max bitrate is automatically\n        // adjusted to 2.5 Mbps. This takes a value between 0 and 1 which determines\n        // the probability for this to be enabled.\n        // capScreenshareBitrate: 1 // 0 to disable\n\n        // Enable callstats only for a percentage of users.\n        // This takes a value between 0 and 100 which determines the probability for\n        // the callstats to be enabled.\n        // callStatsThreshold: 5 // enable callstats for 5% of the users.\n    },\n\n    // Disables ICE/UDP by filtering out local and remote UDP candidates in\n    // signalling.\n    // webrtcIceUdpDisable: false,\n\n    // Disables ICE/TCP by filtering out local and remote TCP candidates in\n    // signalling.\n    // webrtcIceTcpDisable: false,\n\n\n    // Media\n    //\n\n    // Audio\n\n    // Disable measuring of audio levels.\n    // disableAudioLevels: false,\n    // audioLevelsInterval: 200,\n\n    // Enabling this will run the lib-jitsi-meet no audio detection module which\n    // will notify the user if the current selected microphone has no audio\n    // input and will suggest another valid device if one is present.\n    enableNoAudioDetection: true,\n\n    // Enabling this will show a \"Save Logs\" link in the GSM popover that can be\n    // used to collect debug information (XMPP IQs, SDP offer/answer cycles)\n    // about the call.\n    // enableSaveLogs: false,\n\n    // Enabling this will run the lib-jitsi-meet noise detection module which will\n    // notify the user if there is noise, other than voice, coming from the current\n    // selected microphone. The purpose it to let the user know that the input could\n    // be potentially unpleasant for other meeting participants.\n    enableNoisyMicDetection: true,\n\n    // Start the conference in audio only mode (no video is being received nor\n    // sent).\n    // startAudioOnly: false,\n\n    // Every participant after the Nth will start audio muted.\n    // startAudioMuted: 10,\n\n    // Start calls with audio muted. Unlike the option above, this one is only\n    // applied locally. FIXME: having these 2 options is confusing.\n    // startWithAudioMuted: false,\n\n    // Enabling it (with #params) will disable local audio output of remote\n    // participants and to enable it back a reload is needed.\n    // startSilent: false\n\n    // Sets the preferred target bitrate for the Opus audio codec by setting its\n    // 'maxaveragebitrate' parameter. Currently not available in p2p mode.\n    // Valid values are in the range 6000 to 510000\n    // opusMaxAverageBitrate: 20000,\n\n    // Enables support for opus-red (redundancy for Opus).\n    // enableOpusRed: false,\n\n    // Video\n\n    // Sets the preferred resolution (height) for local video. Defaults to 720.\n    // resolution: 720,\n\n    // How many participants while in the tile view mode, before the receiving video quality is reduced from HD to SD.\n    // Use -1 to disable.\n    // maxFullResolutionParticipants: 2,\n\n    // w3c spec-compliant video constraints to use for video capture. Currently\n    // used by browsers that return true from lib-jitsi-meet's\n    // util#browser#usesNewGumFlow. The constraints are independent from\n    // this config's resolution value. Defaults to requesting an ideal\n    // resolution of 720p.\n    // constraints: {\n    //     video: {\n    //         height: {\n    //             ideal: 720,\n    //             max: 720,\n    //             min: 240\n    //         }\n    //     }\n    // },\n\n    // Enable / disable simulcast support.\n    // disableSimulcast: false,\n\n    // Enable / disable layer suspension.  If enabled, endpoints whose HD\n    // layers are not in use will be suspended (no longer sent) until they\n    // are requested again.\n    // enableLayerSuspension: false,\n\n    // Every participant after the Nth will start video muted.\n    // startVideoMuted: 10,\n\n    // Start calls with video muted. Unlike the option above, this one is only\n    // applied locally. FIXME: having these 2 options is confusing.\n    // startWithVideoMuted: false,\n\n    // If set to true, prefer to use the H.264 video codec (if supported).\n    // Note that it's not recommended to do this because simulcast is not\n    // supported when  using H.264. For 1-to-1 calls this setting is enabled by\n    // default and can be toggled in the p2p section.\n    // This option has been deprecated, use preferredCodec under videoQuality section instead.\n    // preferH264: true,\n\n    // If set to true, disable H.264 video codec by stripping it out of the\n    // SDP.\n    // disableH264: false,\n\n    // Desktop sharing\n\n    // Optional desktop sharing frame rate options. Default value: min:5, max:5.\n    // desktopSharingFrameRate: {\n    //     min: 5,\n    //     max: 5\n    // },\n\n    // Try to start calls with screen-sharing instead of camera video.\n    // startScreenSharing: false,\n\n    // Recording\n\n    // Whether to enable file recording or not.\n    // fileRecordingsEnabled: false,\n    // Enable the dropbox integration.\n    // dropbox: {\n    //     appKey: '<APP_KEY>' // Specify your app key here.\n    //     // A URL to redirect the user to, after authenticating\n    //     // by default uses:\n    //     // 'https://jitsi-meet.example.com/static/oauth.html'\n    //     redirectURI:\n    //          'https://jitsi-meet.example.com/subfolder/static/oauth.html'\n    // },\n    // When integrations like dropbox are enabled only that will be shown,\n    // by enabling fileRecordingsServiceEnabled, we show both the integrations\n    // and the generic recording service (its configuration and storage type\n    // depends on jibri configuration)\n    // fileRecordingsServiceEnabled: false,\n    // Whether to show the possibility to share file recording with other people\n    // (e.g. meeting participants), based on the actual implementation\n    // on the backend.\n    // fileRecordingsServiceSharingEnabled: false,\n\n    // Whether to enable live streaming or not.\n    // liveStreamingEnabled: false,\n\n    // Transcription (in interface_config,\n    // subtitles and buttons can be configured)\n    // transcribingEnabled: false,\n\n    // Enables automatic turning on captions when recording is started\n    // autoCaptionOnRecord: false,\n\n    // Misc\n\n    // Default value for the channel \"last N\" attribute. -1 for unlimited.\n    channelLastN: -1,\n\n    // Provides a way to use different \"last N\" values based on the number of participants in the conference.\n    // The keys in an Object represent number of participants and the values are \"last N\" to be used when number of\n    // participants gets to or above the number.\n    //\n    // For the given example mapping, \"last N\" will be set to 20 as long as there are at least 5, but less than\n    // 29 participants in the call and it will be lowered to 15 when the 30th participant joins. The 'channelLastN'\n    // will be used as default until the first threshold is reached.\n    //\n    // lastNLimits: {\n    //     5: 20,\n    //     30: 15,\n    //     50: 10,\n    //     70: 5,\n    //     90: 2\n    // },\n\n    // Provides a way to translate the legacy bridge signaling messages, 'LastNChangedEvent',\n    // 'SelectedEndpointsChangedEvent' and 'ReceiverVideoConstraint' into the new 'ReceiverVideoConstraints' message\n    // that invokes the new bandwidth allocation algorithm in the bridge which is described here\n    // - https://github.com/jitsi/jitsi-videobridge/blob/master/doc/allocation.md.\n    // useNewBandwidthAllocationStrategy: false,\n\n    // Specify the settings for video quality optimizations on the client.\n    // videoQuality: {\n    //    // Provides a way to prevent a video codec from being negotiated on the JVB connection. The codec specified\n    //    // here will be removed from the list of codecs present in the SDP answer generated by the client. If the\n    //    // same codec is specified for both the disabled and preferred option, the disable settings will prevail.\n    //    // Note that 'VP8' cannot be disabled since it's a mandatory codec, the setting will be ignored in this case.\n    //    disabledCodec: 'H264',\n    //\n    //    // Provides a way to set a preferred video codec for the JVB connection. If 'H264' is specified here,\n    //    // simulcast will be automatically disabled since JVB doesn't support H264 simulcast yet. This will only\n    //    // rearrange the the preference order of the codecs in the SDP answer generated by the browser only if the\n    //    // preferred codec specified here is present. Please ensure that the JVB offers the specified codec for this\n    //    // to take effect.\n    //    preferredCodec: 'VP8',\n    //\n    //    // Provides a way to configure the maximum bitrates that will be enforced on the simulcast streams for\n    //    // video tracks. The keys in the object represent the type of the stream (LD, SD or HD) and the values\n    //    // are the max.bitrates to be set on that particular type of stream. The actual send may vary based on\n    //    // the available bandwidth calculated by the browser, but it will be capped by the values specified here.\n    //    // This is currently not implemented on app based clients on mobile.\n    //    maxBitratesVideo: {\n    //          VP8 : {\n    //              low: 200000,\n    //              standard: 500000,\n    //              high: 1500000\n    //          },\n    //          VP9: {\n    //              low: 100000,\n    //              standard: 300000,\n    //              high:  1200000\n    //          }\n    //    },\n    //\n    //    // The options can be used to override default thresholds of video thumbnail heights corresponding to\n    //    // the video quality levels used in the application. At the time of this writing the allowed levels are:\n    //    //     'low' - for the low quality level (180p at the time of this writing)\n    //    //     'standard' - for the medium quality level (360p)\n    //    //     'high' - for the high quality level (720p)\n    //    // The keys should be positive numbers which represent the minimal thumbnail height for the quality level.\n    //    //\n    //    // With the default config value below the application will use 'low' quality until the thumbnails are\n    //    // at least 360 pixels tall. If the thumbnail height reaches 720 pixels then the application will switch to\n    //    // the high quality.\n    //    minHeightForQualityLvl: {\n    //        360: 'standard',\n    //        720: 'high'\n    //    },\n    //\n    //    // Provides a way to resize the desktop track to 720p (if it is greater than 720p) before creating a canvas\n    //    // for the presenter mode (camera picture-in-picture mode with screenshare).\n    //    resizeDesktopForPresenter: false\n    // },\n\n    // // Options for the recording limit notification.\n    // recordingLimit: {\n    //\n    //    // The recording limit in minutes. Note: This number appears in the notification text\n    //    // but doesn't enforce the actual recording time limit. This should be configured in\n    //    // jibri!\n    //    limit: 60,\n    //\n    //    // The name of the app with unlimited recordings.\n    //    appName: 'Unlimited recordings APP',\n    //\n    //    // The URL of the app with unlimited recordings.\n    //    appURL: 'https://unlimited.recordings.app.com/'\n    // },\n\n    // Disables or enables RTX (RFC 4588) (defaults to false).\n    // disableRtx: false,\n\n    // Disables or enables TCC support in this client (default: enabled).\n    // enableTcc: true,\n\n    // Disables or enables REMB support in this client (default: enabled).\n    // enableRemb: true,\n\n    // Enables ICE restart logic in LJM and displays the page reload overlay on\n    // ICE failure. Current disabled by default because it's causing issues with\n    // signaling when Octo is enabled. Also when we do an \"ICE restart\"(which is\n    // not a real ICE restart), the client maintains the TCC sequence number\n    // counter, but the bridge resets it. The bridge sends media packets with\n    // TCC sequence numbers starting from 0.\n    // enableIceRestart: false,\n\n    // Enables forced reload of the client when the call is migrated as a result of\n    // the bridge going down. Currently enabled by default as call migration through\n    // session-terminate is causing siganling issues when Octo is enabled.\n    // enableForcedReload: true,\n\n    // Use TURN/UDP servers for the jitsi-videobridge connection (by default\n    // we filter out TURN/UDP because it is usually not needed since the\n    // bridge itself is reachable via UDP)\n    // useTurnUdp: false\n\n    // UI\n    //\n\n    // Disables responsive tiles.\n    // disableResponsiveTiles: false,\n\n    // Hides lobby button\n    // hideLobbyButton: false,\n\n    // Require users to always specify a display name.\n    // requireDisplayName: true,\n\n    // Whether to use a welcome page or not. In case it's false a random room\n    // will be joined when no room is specified.\n    enableWelcomePage: true,\n\n    // Disable app shortcuts that are registered upon joining a conference\n    // disableShortcuts: false,\n\n    // Disable initial browser getUserMedia requests.\n    // This is useful for scenarios where users might want to start a conference for screensharing only\n    // disableInitialGUM: false,\n\n    // Enabling the close page will ignore the welcome page redirection when\n    // a call is hangup.\n    // enableClosePage: false,\n\n    // Disable hiding of remote thumbnails when in a 1-on-1 conference call.\n    // disable1On1Mode: false,\n\n    // Default language for the user interface.\n    // defaultLanguage: 'en',\n\n    // Disables profile and the edit of all fields from the profile settings (display name and email)\n    // disableProfile: false,\n\n    // Whether or not some features are checked based on token.\n    // enableFeaturesBasedOnToken: false,\n\n    // When enabled the password used for locking a room is restricted to up to the number of digits specified\n    // roomPasswordNumberOfDigits: 10,\n    // default: roomPasswordNumberOfDigits: false,\n\n    // Message to show the users. Example: 'The service will be down for\n    // maintenance at 01:00 AM GMT,\n    // noticeMessage: '',\n\n    // Enables calendar integration, depends on googleApiApplicationClientID\n    // and microsoftApiApplicationClientID\n    // enableCalendarIntegration: false,\n\n    // When 'true', it shows an intermediate page before joining, where the user can configure their devices.\n    // prejoinPageEnabled: false,\n\n    // If etherpad integration is enabled, setting this to true will\n    // automatically open the etherpad when a participant joins.  This\n    // does not affect the mobile app since opening an etherpad\n    // obscures the conference controls -- it's better to let users\n    // choose to open the pad on their own in that case.\n    // openSharedDocumentOnJoin: false,\n\n    // If true, shows the unsafe room name warning label when a room name is\n    // deemed unsafe (due to the simplicity in the name) and a password is not\n    // set or the lobby is not enabled.\n    // enableInsecureRoomNameWarning: false,\n\n    // Whether to automatically copy invitation URL after creating a room.\n    // Document should be focused for this option to work\n    // enableAutomaticUrlCopy: false,\n\n    // Base URL for a Gravatar-compatible service. Defaults to libravatar.\n    // gravatarBaseURL: 'https://seccdn.libravatar.org/avatar/',\n\n    // Moved from interfaceConfig(TOOLBAR_BUTTONS).\n    // The name of the toolbar buttons to display in the toolbar, including the\n    // \"More actions\" menu. If present, the button will display. Exceptions are\n    // \"livestreaming\" and \"recording\" which also require being a moderator and\n    // some other values in config.js to be enabled. Also, the \"profile\" button will\n    // not display for users with a JWT.\n    // Notes:\n    // - it's impossible to choose which buttons go in the \"More actions\" menu\n    // - it's impossible to control the placement of buttons\n    // - 'desktop' controls the \"Share your screen\" button\n    // - if `toolbarButtons` is undefined, we fallback to enabling all buttons on the UI\n    // toolbarButtons: [\n    //    'microphone', 'camera', 'closedcaptions', 'desktop', 'embedmeeting', 'fullscreen',\n    //    'fodeviceselection', 'hangup', 'profile', 'chat', 'recording',\n    //    'livestreaming', 'etherpad', 'sharedvideo', 'shareaudio', 'settings', 'raisehand',\n    //    'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',\n    //    'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'\n    // ],\n\n    // Stats\n    //\n\n    // Whether to enable stats collection or not in the TraceablePeerConnection.\n    // This can be useful for debugging purposes (post-processing/analysis of\n    // the webrtc stats) as it is done in the jitsi-meet-torture bandwidth\n    // estimation tests.\n    // gatherStats: false,\n\n    // The interval at which PeerConnection.getStats() is called. Defaults to 10000\n    // pcStatsInterval: 10000,\n\n    // To enable sending statistics to callstats.io you must provide the\n    // Application ID and Secret.\n    // callStatsID: '',\n    // callStatsSecret: '',\n\n    // Enables sending participants' display names to callstats\n    // enableDisplayNameInStats: false,\n\n    // Enables sending participants' emails (if available) to callstats and other analytics\n    // enableEmailInStats: false,\n\n    // Controls the percentage of automatic feedback shown to participants when callstats is enabled.\n    // The default value is 100%. If set to 0, no automatic feedback will be requested\n    // feedbackPercentage: 100,\n\n    // Privacy\n    //\n\n    // If third party requests are disabled, no other server will be contacted.\n    // This means avatars will be locally generated and callstats integration\n    // will not function.\n    // disableThirdPartyRequests: false,\n\n\n    // Peer-To-Peer mode: used (if enabled) when there are just 2 participants.\n    //\n\n    p2p: {\n        // Enables peer to peer mode. When enabled the system will try to\n        // establish a direct connection when there are exactly 2 participants\n        // in the room. If that succeeds the conference will stop sending data\n        // through the JVB and use the peer to peer connection instead. When a\n        // 3rd participant joins the conference will be moved back to the JVB\n        // connection.\n        enabled: true,\n\n        // The STUN servers that will be used in the peer to peer connections\n        stunServers: [\n\n            // { urls: 'stun:jitsi-meet.example.com:3478' },\n            { urls: 'stun:meet-jit-si-turnrelay.jitsi.net:443' }\n        ]\n\n        // Sets the ICE transport policy for the p2p connection. At the time\n        // of this writing the list of possible values are 'all' and 'relay',\n        // but that is subject to change in the future. The enum is defined in\n        // the WebRTC standard:\n        // https://www.w3.org/TR/webrtc/#rtcicetransportpolicy-enum.\n        // If not set, the effective value is 'all'.\n        // iceTransportPolicy: 'all',\n\n        // If set to true, it will prefer to use H.264 for P2P calls (if H.264\n        // is supported). This setting is deprecated, use preferredCodec instead.\n        // preferH264: true,\n\n        // Provides a way to set the video codec preference on the p2p connection. Acceptable\n        // codec values are 'VP8', 'VP9' and 'H264'.\n        // preferredCodec: 'H264',\n\n        // If set to true, disable H.264 video codec by stripping it out of the\n        // SDP. This setting is deprecated, use disabledCodec instead.\n        // disableH264: false,\n\n        // Provides a way to prevent a video codec from being negotiated on the p2p connection.\n        // disabledCodec: '',\n\n        // How long we're going to wait, before going back to P2P after the 3rd\n        // participant has left the conference (to filter out page reload).\n        // backToP2PDelay: 5\n    },\n\n    analytics: {\n        // The Google Analytics Tracking ID:\n        // googleAnalyticsTrackingId: 'your-tracking-id-UA-123456-1'\n\n        // Matomo configuration:\n        // matomoEndpoint: 'https://your-matomo-endpoint/',\n        // matomoSiteID: '42',\n\n        // The Amplitude APP Key:\n        // amplitudeAPPKey: '<APP_KEY>'\n\n        // Configuration for the rtcstats server:\n        // By enabling rtcstats server every time a conference is joined the rtcstats\n        // module connects to the provided rtcstatsEndpoint and sends statistics regarding\n        // PeerConnection states along with getStats metrics polled at the specified\n        // interval.\n        // rtcstatsEnabled: true,\n\n        // In order to enable rtcstats one needs to provide a endpoint url.\n        // rtcstatsEndpoint: wss://rtcstats-server-pilot.jitsi.net/,\n\n        // The interval at which rtcstats will poll getStats, defaults to 1000ms.\n        // If the value is set to 0 getStats won't be polled and the rtcstats client\n        // will only send data related to RTCPeerConnection events.\n        // rtcstatsPolIInterval: 1000,\n\n        // Array of script URLs to load as lib-jitsi-meet \"analytics handlers\".\n        // scriptURLs: [\n        //      \"libs/analytics-ga.min.js\", // google-analytics\n        //      \"https://example.com/my-custom-analytics.js\"\n        // ],\n    },\n\n    // Logs that should go be passed through the 'log' event if a handler is defined for it\n    // apiLogLevels: ['warn', 'log', 'error', 'info', 'debug'],\n\n    // Information about the jitsi-meet instance we are connecting to, including\n    // the user region as seen by the server.\n    deploymentInfo: {\n        // shard: \"shard1\",\n        // region: \"europe\",\n        // userRegion: \"asia\"\n    },\n\n    // Decides whether the start/stop recording audio notifications should play on record.\n    // disableRecordAudioNotification: false,\n\n    // Disables the sounds that play when other participants join or leave the\n    // conference (if set to true, these sounds will not be played).\n    // disableJoinLeaveSounds: false,\n\n    // Information for the chrome extension banner\n    // chromeExtensionBanner: {\n    //     // The chrome extension to be installed address\n    //     url: 'https://chrome.google.com/webstore/detail/jitsi-meetings/kglhbbefdnlheedjiejgomgmfplipfeb',\n\n    //     // Extensions info which allows checking if they are installed or not\n    //     chromeExtensionsInfo: [\n    //         {\n    //             id: 'kglhbbefdnlheedjiejgomgmfplipfeb',\n    //             path: 'jitsi-logo-48x48.png'\n    //         }\n    //     ]\n    // },\n\n    // Local Recording\n    //\n\n    // localRecording: {\n    // Enables local recording.\n    // Additionally, 'localrecording' (all lowercase) needs to be added to\n    // TOOLBAR_BUTTONS in interface_config.js for the Local Recording\n    // button to show up on the toolbar.\n    //\n    //     enabled: true,\n    //\n\n    // The recording format, can be one of 'ogg', 'flac' or 'wav'.\n    //     format: 'flac'\n    //\n\n    // },\n\n    // Options related to end-to-end (participant to participant) ping.\n    // e2eping: {\n    //   // The interval in milliseconds at which pings will be sent.\n    //   // Defaults to 10000, set to <= 0 to disable.\n    //   pingInterval: 10000,\n    //\n    //   // The interval in milliseconds at which analytics events\n    //   // with the measured RTT will be sent. Defaults to 60000, set\n    //   // to <= 0 to disable.\n    //   analyticsInterval: 60000,\n    //   },\n\n    // If set, will attempt to use the provided video input device label when\n    // triggering a screenshare, instead of proceeding through the normal flow\n    // for obtaining a desktop stream.\n    // NOTE: This option is experimental and is currently intended for internal\n    // use only.\n    // _desktopSharingSourceDevice: 'sample-id-or-label',\n\n    // If true, any checks to handoff to another application will be prevented\n    // and instead the app will continue to display in the current browser.\n    // disableDeepLinking: false,\n\n    // A property to disable the right click context menu for localVideo\n    // the menu has option to flip the locally seen video for local presentations\n    // disableLocalVideoFlip: false,\n\n    // A property used to unset the default flip state of the local video.\n    // When it is set to 'true', the local(self) video will not be mirrored anymore.\n    // doNotFlipLocalVideo: false,\n\n    // Mainly privacy related settings\n\n    // Disables all invite functions from the app (share, invite, dial out...etc)\n    // disableInviteFunctions: true,\n\n    // Disables storing the room name to the recents list\n    // doNotStoreRoom: true,\n\n    // Deployment specific URLs.\n    // deploymentUrls: {\n    //    // If specified a 'Help' button will be displayed in the overflow menu with a link to the specified URL for\n    //    // user documentation.\n    //    userDocumentationURL: 'https://docs.example.com/video-meetings.html',\n    //    // If specified a 'Download our apps' button will be displayed in the overflow menu with a link\n    //    // to the specified URL for an app download page.\n    //    downloadAppsUrl: 'https://docs.example.com/our-apps.html'\n    // },\n\n    // Options related to the remote participant menu.\n    // remoteVideoMenu: {\n    //     // If set to true the 'Kick out' button will be disabled.\n    //     disableKick: true\n    // },\n\n    // If set to true all muting operations of remote participants will be disabled.\n    // disableRemoteMute: true,\n\n    // Enables support for lip-sync for this client (if the browser supports it).\n    // enableLipSync: false\n\n    /**\n     External API url used to receive branding specific information.\n     If there is no url set or there are missing fields, the defaults are applied.\n     None of the fields are mandatory and the response must have the shape:\n     {\n         // The hex value for the colour used as background\n         backgroundColor: '#fff',\n         // The url for the image used as background\n         backgroundImageUrl: 'https://example.com/background-img.png',\n         // The anchor url used when clicking the logo image\n         logoClickUrl: 'https://example-company.org',\n         // The url used for the image used as logo\n         logoImageUrl: 'https://example.com/logo-img.png'\n     }\n    */\n    // dynamicBrandingUrl: '',\n\n    // Sets the background transparency level. '0' is fully transparent, '1' is opaque.\n    // backgroundAlpha: 1,\n\n    // The URL of the moderated rooms microservice, if available. If it\n    // is present, a link to the service will be rendered on the welcome page,\n    // otherwise the app doesn't render it.\n    // moderatedRoomServiceUrl: 'https://moderated.jitsi-meet.example.com',\n\n    // If true, tile view will not be enabled automatically when the participants count threshold is reached.\n    // disableTileView: true,\n\n    // Hides the conference subject\n    // hideConferenceSubject: true,\n\n    // Hides the conference timer.\n    // hideConferenceTimer: true,\n\n    // Hides the participants stats\n    // hideParticipantsStats: true,\n\n    // Sets the conference subject\n    // subject: 'Conference Subject',\n\n    // This property is related to the use case when jitsi-meet is used via the IFrame API. When the property is true\n    // jitsi-meet will use the local storage of the host page instead of its own. This option is useful if the browser\n    // is not persisting the local storage inside the iframe.\n    // useHostPageLocalStorage: true,\n\n    // List of undocumented settings used in jitsi-meet\n    /**\n     _immediateReloadThreshold\n     debug\n     debugAudioLevels\n     deploymentInfo\n     dialInConfCodeUrl\n     dialInNumbersUrl\n     dialOutAuthUrl\n     dialOutCodesUrl\n     disableRemoteControl\n     displayJids\n     etherpad_base\n     externalConnectUrl\n     firefox_fake_device\n     googleApiApplicationClientID\n     iAmRecorder\n     iAmSipGateway\n     microsoftApiApplicationClientID\n     peopleSearchQueryTypes\n     peopleSearchUrl\n     requireDisplayName\n     tokenAuthUrl\n     */\n\n    /**\n     * This property can be used to alter the generated meeting invite links (in combination with a branding domain\n     * which is retrieved internally by jitsi meet) (e.g. https://meet.jit.si/someMeeting\n     * can become https://brandedDomain/roomAlias)\n     */\n    // brandingRoomAlias: null,\n\n    // List of undocumented settings used in lib-jitsi-meet\n    /**\n     _peerConnStatusOutOfLastNTimeout\n     _peerConnStatusRtcMuteTimeout\n     abTesting\n     avgRtpStatsN\n     callStatsConfIDNamespace\n     callStatsCustomScriptUrl\n     desktopSharingSources\n     disableAEC\n     disableAGC\n     disableAP\n     disableHPF\n     disableNS\n     enableTalkWhileMuted\n     forceJVB121Ratio\n     forceTurnRelay\n     hiddenDomain\n     ignoreStartMuted\n     websocketKeepAlive\n     websocketKeepAliveUrl\n     */\n\n    /**\n        Use this array to configure which notifications will be shown to the user\n        The items correspond to the title or description key of that notification\n        Some of these notifications also depend on some other internal logic to be displayed or not,\n        so adding them here will not ensure they will always be displayed\n\n        A falsy value for this prop will result in having all notifications enabled (e.g null, undefined, false)\n    */\n    // notifications: [\n    //     'connection.CONNFAIL', // shown when the connection fails,\n    //     'dialog.cameraNotSendingData', // shown when there's no feed from user's camera\n    //     'dialog.kickTitle', // shown when user has been kicked\n    //     'dialog.liveStreaming', // livestreaming notifications (pending, on, off, limits)\n    //     'dialog.lockTitle', // shown when setting conference password fails\n    //     'dialog.maxUsersLimitReached', // shown when maximmum users limit has been reached\n    //     'dialog.micNotSendingData', // shown when user's mic is not sending any audio\n    //     'dialog.passwordNotSupportedTitle', // shown when setting conference password fails due to password format\n    //     'dialog.recording', // recording notifications (pending, on, off, limits)\n    //     'dialog.remoteControlTitle', // remote control notifications (allowed, denied, start, stop, error)\n    //     'dialog.reservationError',\n    //     'dialog.serviceUnavailable', // shown when server is not reachable\n    //     'dialog.sessTerminated', // shown when there is a failed conference session\n    //     'dialog.sessionRestarted', // show when a client reload is initiated because of bridge migration\n    //     'dialog.tokenAuthFailed', // show when an invalid jwt is used\n    //     'dialog.transcribing', // transcribing notifications (pending, off)\n    //     'dialOut.statusMessage', // shown when dial out status is updated.\n    //     'liveStreaming.busy', // shown when livestreaming service is busy\n    //     'liveStreaming.failedToStart', // shown when livestreaming fails to start\n    //     'liveStreaming.unavailableTitle', // shown when livestreaming service is not reachable\n    //     'lobby.joinRejectedMessage', // shown when while in a lobby, user's request to join is rejected\n    //     'lobby.notificationTitle', // shown when lobby is toggled and when join requests are allowed / denied\n    //     'localRecording.localRecording', // shown when a local recording is started\n    //     'notify.disconnected', // shown when a participant has left\n    //     'notify.grantedTo', // shown when moderator rights were granted to a participant\n    //     'notify.invitedOneMember', // shown when 1 participant has been invited\n    //     'notify.invitedThreePlusMembers', // shown when 3+ participants have been invited\n    //     'notify.invitedTwoMembers', // shown when 2 participants have been invited\n    //     'notify.kickParticipant', // shown when a participant is kicked\n    //     'notify.mutedRemotelyTitle', // shown when user is muted by a remote party\n    //     'notify.mutedTitle', // shown when user has been muted upon joining,\n    //     'notify.newDeviceAudioTitle', // prompts the user to use a newly detected audio device\n    //     'notify.newDeviceCameraTitle', // prompts the user to use a newly detected camera\n    //     'notify.passwordRemovedRemotely', // shown when a password has been removed remotely\n    //     'notify.passwordSetRemotely', // shown when a password has been set remotely\n    //     'notify.raisedHand', // shown when a partcipant used raise hand,\n    //     'notify.startSilentTitle', // shown when user joined with no audio\n    //     'prejoin.errorDialOut',\n    //     'prejoin.errorDialOutDisconnected',\n    //     'prejoin.errorDialOutFailed',\n    //     'prejoin.errorDialOutStatus',\n    //     'prejoin.errorStatusCode',\n    //     'prejoin.errorValidation',\n    //     'recording.busy', // shown when recording service is busy\n    //     'recording.failedToStart', // shown when recording fails to start\n    //     'recording.unavailableTitle', // shown when recording service is not reachable\n    //     'toolbar.noAudioSignalTitle', // shown when a broken mic is detected\n    //     'toolbar.noisyAudioInputTitle', // shown when noise is detected for the current microphone\n    //     'toolbar.talkWhileMutedPopup', // shown when user tries to speak while muted\n    //     'transcribing.failedToStart' // shown when transcribing fails to start\n    // ]\n\n    // Allow all above example options to include a trailing comma and\n    // prevent fear when commenting out the last value.\n    makeJsonParserHappy: 'even if last key had a trailing comma'\n\n    // no configuration value should follow this line.\n};\n\n/* eslint-enable no-unused-vars, no-var */\n\n// Begin default config overrides.\n\nif (!config.hasOwnProperty('hosts')) config.hosts = {};\n\nconfig.hosts.domain = 'meet.jitsi';\nconfig.focusUserJid = 'focus@auth.meet.jitsi';\n\nconfig.hosts.muc = 'muc.meet.jitsi';\n// When using authentication, domain for guest users.\nconfig.hosts.anonymousdomain = 'guest.meet.jitsi';\n// Domain for authenticated users. Defaults to <domain>.\nconfig.hosts.authdomain = 'meet.jitsi';\nconfig.bosh = '/http-bind';\nconfig.websocket = 'wss://meet.testing-14.madrubyscience.com/xmpp-websocket';\n// Video configuration.\n//\n\nif (!config.hasOwnProperty('constraints')) config.constraints = {};\nif (!config.constraints.hasOwnProperty('video')) config.constraints.video = {};\n\nconfig.resolution = 720;\nconfig.constraints.video.height = { ideal: 720, max: 720, min: 180 };\nconfig.constraints.video.width = { ideal: 1280, max: 1280, min: 320};\nconfig.disableSimulcast = false;\nconfig.startVideoMuted = 10;\nconfig.startWithVideoMuted = false;\n\n// ScreenShare Configuration.\n//\nconfig.desktopSharingFrameRate = { min: 5, max: 5 };\n\n// Audio configuration.\n//\n\nconfig.enableNoAudioDetection = false;\nconfig.enableTalkWhileMuted = false;\nconfig.disableAP = false;\nconfig.stereo = false;\nconfig.startAudioOnly = false;\nconfig.startAudioMuted = 10;\nconfig.startWithAudioMuted = false;\nconfig.startSilent = false;\nconfig.disableAudioLevels = false;\nconfig.enableNoisyMicDetection = true;\n\n\n// Peer-to-Peer options.\n//\n\nif (!config.hasOwnProperty('p2p')) config.p2p = {};\n\nconfig.p2p.enabled = true;\n\n\n// Etherpad\n//\n\n// Recording.\n//\n\n// Analytics.\n//\n\nif (!config.hasOwnProperty('analytics')) config.analytics = {};\n\n// Enables callstatsUsername to be reported as statsId and used\n// by callstats as repoted remote id.\nconfig.enableStatsID = false;\n\n\n// Dial in/out services.\n//\n\n// Calendar service integration.\n//\n\nconfig.enableCalendarIntegration = false;\n\n// Invitation service.\n//\n\n// Miscellaneous.\n//\n\n// Prejoin page.\nconfig.prejoinPageEnabled = false;\n\n// Welcome page.\nconfig.enableWelcomePage = true;\n\n// Close page.\nconfig.enableClosePage = false;\n\n// Require users to always specify a display name.\nconfig.requireDisplayName = false;\n\n// Chrome extension banner.\n// Advanced.\n//\n\n// Lipsync hack in jicofo, may not be safe.\nconfig.enableLipSync = false;\n\nconfig.enableRemb = true;\nconfig.enableTcc = true;\n\n// Enable IPv6 support.\nconfig.useIPv6 = true;\n\n// Transcriptions (subtitles and buttons can be configured in interface_config)\nconfig.transcribingEnabled = false;\n\n// Deployment information.\n//\n\nif (!config.hasOwnProperty('deploymentInfo')) config.deploymentInfo = {};\n\n// Testing\n//\n\nif (!config.hasOwnProperty('testing')) config.testing = {};\nif (!config.testing.hasOwnProperty('octo')) config.testing.octo = {};\n\nconfig.testing.capScreenshareBitrate = 1;\nconfig.testing.octo.probability = 0;\n\n// Deep Linking\nconfig.disableDeepLinking = false;\n</script><!-- adapt to your needs, i.e. set hosts and bosh path -->\n    \n    <script src=\"libs/do_external_connect.min.js?v=1\"></script>\n    <script>/* eslint-disable no-unused-vars, no-var, max-len */\n/* eslint sort-keys: [\"error\", \"asc\", {\"caseSensitive\": false}] */\n\n/**\n * !!!IMPORTANT!!!\n *\n * This file is considered deprecated. All options will eventually be moved to\n * config.js, and no new options should be added here.\n */\n\nvar interfaceConfig = {\n    APP_NAME: 'Jitsi Meet',\n    AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',\n    AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',\n\n    /**\n     * A UX mode where the last screen share participant is automatically\n     * pinned. Valid values are the string \"remote-only\" so remote participants\n     * get pinned but not local, otherwise any truthy value for all participants,\n     * and any falsy value to disable the feature.\n     *\n     * Note: this mode is experimental and subject to breakage.\n     */\n    AUTO_PIN_LATEST_SCREEN_SHARE: 'remote-only',\n    BRAND_WATERMARK_LINK: '',\n\n    CLOSE_PAGE_GUEST_HINT: false, // A html text to be shown to guests on the close page, false disables it\n    /**\n     * Whether the connection indicator icon should hide itself based on\n     * connection strength. If true, the connection indicator will remain\n     * displayed while the participant has a weak connection and will hide\n     * itself after the CONNECTION_INDICATOR_HIDE_TIMEOUT when the connection is\n     * strong.\n     *\n     * @type {boolean}\n     */\n    CONNECTION_INDICATOR_AUTO_HIDE_ENABLED: true,\n\n    /**\n     * How long the connection indicator should remain displayed before hiding.\n     * Used in conjunction with CONNECTION_INDICATOR_AUTOHIDE_ENABLED.\n     *\n     * @type {number}\n     */\n    CONNECTION_INDICATOR_AUTO_HIDE_TIMEOUT: 5000,\n\n    /**\n     * If true, hides the connection indicators completely.\n     *\n     * @type {boolean}\n     */\n    CONNECTION_INDICATOR_DISABLED: false,\n\n    DEFAULT_BACKGROUND: '#474747',\n    DEFAULT_LOCAL_DISPLAY_NAME: 'me',\n    DEFAULT_LOGO_URL: 'images/watermark.svg',\n    DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow Jitster',\n    DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.svg',\n\n    DISABLE_DOMINANT_SPEAKER_INDICATOR: false,\n\n    DISABLE_FOCUS_INDICATOR: false,\n\n    /**\n     * If true, notifications regarding joining/leaving are no longer displayed.\n     */\n    DISABLE_JOIN_LEAVE_NOTIFICATIONS: false,\n\n    /**\n     * If true, presence status: busy, calling, connected etc. is not displayed.\n     */\n    DISABLE_PRESENCE_STATUS: false,\n\n    /**\n     * Whether the ringing sound in the call/ring overlay is disabled. If\n     * {@code undefined}, defaults to {@code false}.\n     *\n     * @type {boolean}\n     */\n    DISABLE_RINGING: false,\n\n    /**\n     * Whether the speech to text transcription subtitles panel is disabled.\n     * If {@code undefined}, defaults to {@code false}.\n     *\n     * @type {boolean}\n     */\n    DISABLE_TRANSCRIPTION_SUBTITLES: false,\n\n    /**\n     * Whether or not the blurred video background for large video should be\n     * displayed on browsers that can support it.\n     */\n    DISABLE_VIDEO_BACKGROUND: false,\n\n    DISPLAY_WELCOME_FOOTER: true,\n    DISPLAY_WELCOME_PAGE_ADDITIONAL_CARD: false,\n    DISPLAY_WELCOME_PAGE_CONTENT: false,\n    DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,\n\n    ENABLE_DIAL_OUT: true,\n\n    ENABLE_FEEDBACK_ANIMATION: false, // Enables feedback star animation.\n\n    FILM_STRIP_MAX_HEIGHT: 120,\n\n    GENERATE_ROOMNAMES_ON_WELCOME_PAGE: true,\n\n    /**\n     * Hide the logo on the deep linking pages.\n     */\n    HIDE_DEEP_LINKING_LOGO: false,\n\n    /**\n     * Hide the invite prompt in the header when alone in the meeting.\n     */\n    HIDE_INVITE_MORE_HEADER: false,\n\n    INITIAL_TOOLBAR_TIMEOUT: 20000,\n    JITSI_WATERMARK_LINK: 'https://jitsi.org',\n\n    LANG_DETECTION: true, // Allow i18n to detect the system language\n    LIVE_STREAMING_HELP_LINK: 'https://jitsi.org/live', // Documentation reference for the live streaming feature.\n    LOCAL_THUMBNAIL_RATIO: 16 / 9, // 16:9\n\n    /**\n     * Maximum coefficient of the ratio of the large video to the visible area\n     * after the large video is scaled to fit the window.\n     *\n     * @type {number}\n     */\n    MAXIMUM_ZOOMING_COEFFICIENT: 1.3,\n\n    /**\n     * Whether the mobile app Jitsi Meet is to be promoted to participants\n     * attempting to join a conference in a mobile Web browser. If\n     * {@code undefined}, defaults to {@code true}.\n     *\n     * @type {boolean}\n     */\n    MOBILE_APP_PROMO: true,\n\n    /**\n     * Specify custom URL for downloading android mobile app.\n     */\n    MOBILE_DOWNLOAD_LINK_ANDROID: 'https://play.google.com/store/apps/details?id=org.jitsi.meet',\n\n    /**\n     * Specify custom URL for downloading f droid app.\n     */\n    MOBILE_DOWNLOAD_LINK_F_DROID: 'https://f-droid.org/en/packages/org.jitsi.meet/',\n\n    /**\n     * Specify URL for downloading ios mobile app.\n     */\n    MOBILE_DOWNLOAD_LINK_IOS: 'https://itunes.apple.com/us/app/jitsi-meet/id1165103905',\n\n    NATIVE_APP_NAME: 'Jitsi Meet',\n\n    // Names of browsers which should show a warning stating the current browser\n    // has a suboptimal experience. Browsers which are not listed as optimal or\n    // unsupported are considered suboptimal. Valid values are:\n    // chrome, chromium, edge, electron, firefox, nwjs, opera, safari\n    OPTIMAL_BROWSERS: [ 'chrome', 'chromium', 'firefox', 'nwjs', 'electron', 'safari' ],\n\n    POLICY_LOGO: null,\n    PROVIDER_NAME: 'Jitsi',\n\n    /**\n     * If true, will display recent list\n     *\n     * @type {boolean}\n     */\n    RECENT_LIST_ENABLED: true,\n    REMOTE_THUMBNAIL_RATIO: 1, // 1:1\n\n    SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],\n\n    /**\n     * Specify which sharing features should be displayed. If the value is not set\n     * all sharing features will be shown. You can set [] to disable all.\n     */\n    // SHARING_FEATURES: ['email', 'url', 'dial-in', 'embed'],\n\n    SHOW_BRAND_WATERMARK: false,\n\n    /**\n    * Decides whether the chrome extension banner should be rendered on the landing page and during the meeting.\n    * If this is set to false, the banner will not be rendered at all. If set to true, the check for extension(s)\n    * being already installed is done before rendering.\n    */\n    SHOW_CHROME_EXTENSION_BANNER: false,\n\n    SHOW_DEEP_LINKING_IMAGE: false,\n    SHOW_JITSI_WATERMARK: true,\n    SHOW_POWERED_BY: false,\n    SHOW_PROMOTIONAL_CLOSE_PAGE: false,\n\n    /*\n     * If indicated some of the error dialogs may point to the support URL for\n     * help.\n     */\n    SUPPORT_URL: 'https://community.jitsi.org/',\n\n    TOOLBAR_ALWAYS_VISIBLE: false,\n\n    /**\n     * DEPRECATED!\n     * This config was moved to config.js as `toolbarButtons`.\n     */\n    // TOOLBAR_BUTTONS: [\n    //     'microphone', 'camera', 'desktop', 'embedmeeting', 'fullscreen',\n    //     'fodeviceselection', 'hangup', 'profile', 'chat', 'recording',\n    //     'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',\n    //     'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',\n    //     'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'\n    // ],\n\n    TOOLBAR_TIMEOUT: 4000,\n\n    // Browsers, in addition to those which do not fully support WebRTC, that\n    // are not supported and should show the unsupported browser page.\n    UNSUPPORTED_BROWSERS: [],\n\n    /**\n     * Whether to show thumbnails in filmstrip as a column instead of as a row.\n     */\n    VERTICAL_FILMSTRIP: true,\n\n    // Determines how the video would fit the screen. 'both' would fit the whole\n    // screen, 'height' would fit the original video height to the height of the\n    // screen, 'width' would fit the original video width to the width of the\n    // screen respecting ratio.\n    VIDEO_LAYOUT_FIT: 'both',\n\n    /**\n     * If true, hides the video quality label indicating the resolution status\n     * of the current large video.\n     *\n     * @type {boolean}\n     */\n    VIDEO_QUALITY_LABEL_DISABLED: false,\n\n    /**\n     * How many columns the tile view can expand to. The respected range is\n     * between 1 and 5.\n     */\n    // TILE_VIEW_MAX_COLUMNS: 5,\n\n    /**\n     * Specify Firebase dynamic link properties for the mobile apps.\n     */\n    // MOBILE_DYNAMIC_LINK: {\n    //    APN: 'org.jitsi.meet',\n    //    APP_CODE: 'w2atb',\n    //    CUSTOM_DOMAIN: undefined,\n    //    IBI: 'com.atlassian.JitsiMeet.ios',\n    //    ISI: '1165103905'\n    // },\n\n    /**\n     * Specify mobile app scheme for opening the app from the mobile browser.\n     */\n    // APP_SCHEME: 'org.jitsi.meet',\n\n    /**\n     * Specify the Android app package name.\n     */\n    // ANDROID_APP_PACKAGE: 'org.jitsi.meet',\n\n    /**\n     * Override the behavior of some notifications to remain displayed until\n     * explicitly dismissed through a user action. The value is how long, in\n     * milliseconds, those notifications should remain displayed.\n     */\n    // ENFORCE_NOTIFICATION_AUTO_DISMISS_TIMEOUT: 15000,\n\n    // List of undocumented settings\n    /**\n     INDICATOR_FONT_SIZES\n     PHONE_NUMBER_REGEX\n    */\n\n    // Allow all above example options to include a trailing comma and\n    // prevent fear when commenting out the last value.\n    // eslint-disable-next-line sort-keys\n    makeJsonParserHappy: 'even if last key had a trailing comma'\n\n    // No configuration value should follow this line.\n};\n\n/* eslint-enable no-unused-vars, no-var, max-len */\n</script>\n    <script>/* eslint-disable no-unused-vars, no-var */\n\n// Logging configuration\nvar loggingConfig = {\n    // default log level for the app and lib-jitsi-meet\n    defaultLogLevel: 'trace',\n\n    // Option to disable LogCollector (which stores the logs on CallStats)\n    // disableLogCollector: true,\n\n    // The following are too verbose in their logging with the\n    // {@link #defaultLogLevel}:\n    'modules/RTC/TraceablePeerConnection.js': 'info',\n    'modules/statistics/CallStats.js': 'info',\n    'modules/xmpp/strophe.util.js': 'log'\n};\n\n/* eslint-enable no-unused-vars, no-var */\n\n// XXX Web/React server-includes logging_config.js into index.html.\n// Mobile/react-native requires it in react/features/base/logging. For the\n// purposes of the latter, (try to) export loggingConfig. The following\n// detection of a module system is inspired by webpack.\ntypeof module === 'object'\n    && typeof exports === 'object'\n    && (module.exports = loggingConfig);\n</script>\n    <script src=\"libs/lib-jitsi-meet.min.js?v=4900\"></script>\n    <script src=\"libs/app.bundle.min.js?v=4900\"></script>\n    <title>Jitsi Meet</title>\n<meta property=\"og:title\" content=\"Jitsi Meet\"/>\n<meta property=\"og:image\" content=\"images/jitsilogo.png?v=1\"/>\n<meta property=\"og:description\" content=\"Join a WebRTC video conference powered by the Jitsi Videobridge\"/>\n<meta description=\"Join a WebRTC video conference powered by the Jitsi Videobridge\"/>\n<meta itemprop=\"name\" content=\"Jitsi Meet\"/>\n<meta itemprop=\"description\" content=\"Join a WebRTC video conference powered by the Jitsi Videobridge\"/>\n<meta itemprop=\"image\" content=\"images/jitsilogo.png?v=1\"/>\n<link rel=\"icon\" type=\"image/png\" href=\"images/favicon.ico?v=1\"/>\n\n    \n    <template id = \"welcome-page-additional-content-template\"></template>\n\n    <template id = \"welcome-page-additional-card-template\"></template>\n\n    <template id=\"settings-toolbar-additional-content-template\"></template>\n\n  </head>\n  <body>\n    <noscript>\n        <div>JavaScript is disabled. </br>For this site to work you have to enable JavaScript.</div>\n    </noscript>\n    \n    <div id=\"react\"></div>\n  </body>\n</html>\n"
+          },
+          "redirectURL": "",
+          "headersSize": 268,
+          "bodySize": -268,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "",
+        "startedDateTime": "2021-05-10T23:39:11.329Z",
+        "time": 115.0240000570193,
+        "timings": {
+          "blocked": 3.0810000335276126,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 110.87000000221282,
+          "receive": 1.0730000212788582,
+          "_blocked_queueing": 1.6250000335276127
+        }
+      },
+      {
+        "_priority": null,
+        "_resourceType": "websocket",
+        "_webSocketMessages": [
+          {
+            "type": "send",
+            "time": 1620689954.304272,
+            "opcode": 1,
+            "data": "<open to=\"guest.meet.jitsi\" version=\"1.0\" xmlns=\"urn:ietf:params:xml:ns:xmpp-framing\"/>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689954.3364708,
+            "opcode": 1,
+            "data": "<open xmlns='urn:ietf:params:xml:ns:xmpp-framing' from='guest.meet.jitsi' version='1.0' xml:lang='en' id='09f6387c-55d0-447a-bf6d-79026c53b529'/>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689954.3374927,
+            "opcode": 1,
+            "data": "<stream:features xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams'><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>ANONYMOUS</mechanism></mechanisms></stream:features>"
+          },
+          {
+            "type": "send",
+            "time": 1620689954.3386729,
+            "opcode": 1,
+            "data": "<auth mechanism=\"ANONYMOUS\" xmlns=\"urn:ietf:params:xml:ns:xmpp-sasl\"/>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689954.3716738,
+            "opcode": 1,
+            "data": "<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689954.3725328,
+            "opcode": 1,
+            "data": "<open to=\"guest.meet.jitsi\" version=\"1.0\" xmlns=\"urn:ietf:params:xml:ns:xmpp-framing\"/>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689954.4061348,
+            "opcode": 1,
+            "data": "<open xmlns='urn:ietf:params:xml:ns:xmpp-framing' from='guest.meet.jitsi' version='1.0' xml:lang='en' id='5a6752e9-1034-4069-9321-532cbac2c55b'/>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689954.4064648,
+            "opcode": 1,
+            "data": "<stream:features xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams'><ver xmlns='urn:xmpp:features:rosterver'/><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'><required/></bind><session xmlns='urn:ietf:params:xml:ns:xmpp-session'><optional/></session><c xmlns='http://jabber.org/protocol/caps' ver='ZBWApSGFMsTZkuVThHtyU5xv1Mk=' node='http://prosody.im' hash='sha-1'/></stream:features>"
+          },
+          {
+            "type": "send",
+            "time": 1620689954.4071617,
+            "opcode": 1,
+            "data": "<iq id=\"_bind_auth_2\" type=\"set\" xmlns=\"jabber:client\"><bind xmlns=\"urn:ietf:params:xml:ns:xmpp-bind\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689954.4388647,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' id='_bind_auth_2' type='result'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'><jid>3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG</jid></bind></iq>"
+          },
+          {
+            "type": "send",
+            "time": 1620689954.4394257,
+            "opcode": 1,
+            "data": "<iq id=\"_session_auth_2\" type=\"set\" xmlns=\"jabber:client\"><session xmlns=\"urn:ietf:params:xml:ns:xmpp-session\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689954.4731739,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' id='_session_auth_2' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' type='result'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689954.4751918,
+            "opcode": 1,
+            "data": "<iq id=\"cf094d13-1a20-4350-805d-a2a9d8a35ab3:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><services xmlns=\"urn:xmpp:extdisco:2\"/></iq>"
+          },
+          {
+            "type": "send",
+            "time": 1620689954.4757497,
+            "opcode": 1,
+            "data": "<iq from=\"3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG\" id=\"44aed870-f243-48b3-aeb8-73e69fc738e6:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><query xmlns=\"http://jabber.org/protocol/disco#info\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689954.5087428,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' type='error' id='cf094d13-1a20-4350-805d-a2a9d8a35ab3:sendIQ'><error type='cancel'><service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/></error></iq>"
+          },
+          {
+            "type": "send",
+            "time": 1620689954.5096498,
+            "opcode": 1,
+            "data": "<iq id=\"5572ffb9-40c2-44d6-996a-a9798433de75:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><services xmlns=\"urn:xmpp:extdisco:1\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689954.5098808,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' type='result' id='44aed870-f243-48b3-aeb8-73e69fc738e6:sendIQ'><query xmlns='http://jabber.org/protocol/disco#info'><identity name='Prosody' category='server' type='im'/><identity name='Prosody' category='pubsub' type='pep'/><identity name='speakerstats.meet.jitsi' category='component' type='speakerstats'/><identity name='Prosody PubSub Service' category='pubsub' type='service'/><identity name='conferenceduration.meet.jitsi' category='component' type='conference_duration'/><feature var='urn:xmpp:ping'/><feature var='msgoffline'/><feature var='jabber:iq:private'/><feature var='http://jabber.org/protocol/disco#info'/><feature var='http://jabber.org/protocol/disco#items'/><feature var='urn:xmpp:time'/><feature var='jabber:iq:time'/><feature var='jabber:iq:version'/><feature var='http://jabber.org/protocol/pubsub#publish'/><feature var='http://jabber.org/protocol/pubsub'/><feature var='http://jabber.org/protocol/pubsub#retrieve-subscriptions'/><feature var='http://jabber.org/protocol/pubsub#delete-items'/><feature var='http://jabber.org/protocol/pubsub#purge-nodes'/><feature var='http://jabber.org/protocol/pubsub#instant-nodes'/><feature var='http://jabber.org/protocol/pubsub#subscription-options'/><feature var='http://jabber.org/protocol/pubsub#persistent-items'/><feature var='http://jabber.org/protocol/pubsub#retract-items'/><feature var='http://jabber.org/protocol/pubsub#delete-nodes'/><feature var='http://jabber.org/protocol/pubsub#retrieve-default'/><feature var='http://jabber.org/protocol/pubsub#member-affiliation'/><feature var='http://jabber.org/protocol/pubsub#access-open'/><feature var='http://jabber.org/protocol/pubsub#publisher-affiliation'/><feature var='http://jabber.org/protocol/pubsub#modify-affiliations'/><feature var='http://jabber.org/protocol/pubsub#create-and-configure'/><feature var='http://jabber.org/protocol/pubsub#item-ids'/><feature var='http://jabber.org/protocol/pubsub#publish-options'/><feature var='http://jabber.org/protocol/pubsub#outcast-affiliation'/><feature var='http://jabber.org/protocol/pubsub#create-nodes'/><feature var='http://jabber.org/protocol/pubsub#config-node'/><feature var='http://jabber.org/protocol/pubsub#meta-data'/><feature var='http://jabber.org/protocol/pubsub#multi-items'/><feature var='http://jabber.org/protocol/pubsub#subscribe'/><feature var='http://jabber.org/protocol/pubsub#retrieve-items'/><feature var='vcard-temp'/><feature var='jabber:iq:last'/><feature var='jabber:iq:register'/><feature var='http://jabber.org/protocol/commands'/><feature var='jabber:iq:roster'/></query></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689954.541509,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' type='error' id='5572ffb9-40c2-44d6-996a-a9798433de75:sendIQ'><error type='cancel'><service-unavailable xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/></error></iq>"
+          },
+          {
+            "type": "send",
+            "time": 1620689955.7117448,
+            "opcode": 1,
+            "data": "<iq id=\"7eb85eda-cd67-4993-8ddb-e2166ba91b7c:sendIQ\" to=\"focus.meet.jitsi\" type=\"set\" xmlns=\"jabber:client\"><conference machine-uid=\"5bbf9a67292309dcbe3ba19974dfa1c7\" room=\"newroom@muc.meet.jitsi\" session-id=\"c743d660-216a-43d8-b55c-7e5f7fc184fd\" xmlns=\"http://jitsi.org/protocol/focus\"><property name=\"disableRtx\" value=\"false\"/><property name=\"startAudioMuted\" value=\"10\"/><property name=\"startVideoMuted\" value=\"10\"/><property name=\"stereo\" value=\"false\"/></conference></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689955.805116,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='focus.meet.jitsi' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' type='result' id='7eb85eda-cd67-4993-8ddb-e2166ba91b7c:sendIQ'><conference xmlns='http://jitsi.org/protocol/focus' identity='skotosadmin@meet.jitsi' focusjid='focus@auth.meet.jitsi' session-id='c743d660-216a-43d8-b55c-7e5f7fc184fd' ready='true' room='newroom@muc.meet.jitsi'><property name='authentication' value='true'/><property name='externalAuth' value='false'/></conference></iq>"
+          },
+          {
+            "type": "send",
+            "time": 1620689955.8115509,
+            "opcode": 1,
+            "data": "<presence to=\"newroom@muc.meet.jitsi/3e40c345\" xmlns=\"jabber:client\"><x xmlns=\"http://jabber.org/protocol/muc\"/><stats-id>Antonetta-6XB</stats-id><videomuted xmlns=\"http://jitsi.org/jitmeet/video\">false</videomuted><c hash=\"sha-1\" node=\"http://jitsi.org/jitsimeet\" ver=\"ZYz/Bk0YZmQuoeSFs25VOxJYXf4=\" xmlns=\"http://jabber.org/protocol/caps\"/><features><feature var=\"https://jitsi.org/meet/e2ee\"/></features><jitsi_participant_codecType>vp8</jitsi_participant_codecType><nick xmlns=\"http://jabber.org/protocol/nick\">skott</nick><jitsi_participant_e2ee.idKey>qbrkQxNkyYZSkm+PFRAJ1m+NW51+Xtq4d1ib73K0cH8</jitsi_participant_e2ee.idKey><audiomuted xmlns=\"http://jitsi.org/jitmeet/audio\">false</audiomuted><videoType xmlns=\"http://jitsi.org/jitmeet/video\">camera</videoType></presence>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689955.8625758,
+            "opcode": 1,
+            "data": "<presence xmlns='jabber:client' from='newroom@muc.meet.jitsi/focus' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' id='Glpzp-157793'><etherpad xmlns='http://jitsi.org/jitmeet/etherpad'>newroom</etherpad><versions xmlns='http://jitsi.org/jitmeet'><component name='focus'>1.0.740</component></versions><conference-properties xmlns='http://jitsi.org/protocol/focus'><property key='support-terminate-restart' value='true'/></conference-properties><c xmlns='http://jabber.org/protocol/caps' ver='Lg0vhCNhxjoeKJi2/hukdsizNWA=' node='http://jitsi.org/jicofo' hash='sha-1'/><x xmlns='http://jabber.org/protocol/muc#user'><item role='moderator' jid='focus@auth.meet.jitsi/focus' affiliation='owner'/></x></presence>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689955.8752809,
+            "opcode": 1,
+            "data": "<presence xmlns='jabber:client' from='newroom@muc.meet.jitsi/3e40c345' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG'><stats-id>Antonetta-6XB</stats-id><videomuted xmlns='http://jitsi.org/jitmeet/video'>false</videomuted><c xmlns='http://jabber.org/protocol/caps' ver='ZYz/Bk0YZmQuoeSFs25VOxJYXf4=' node='http://jitsi.org/jitsimeet' hash='sha-1'/><features><feature var='https://jitsi.org/meet/e2ee'/></features><jitsi_participant_codecType>vp8</jitsi_participant_codecType><nick xmlns='http://jabber.org/protocol/nick'>skott</nick><jitsi_participant_e2ee.idKey>qbrkQxNkyYZSkm+PFRAJ1m+NW51+Xtq4d1ib73K0cH8</jitsi_participant_e2ee.idKey><audiomuted xmlns='http://jitsi.org/jitmeet/audio'>false</audiomuted><videoType xmlns='http://jitsi.org/jitmeet/video'>camera</videoType><x xmlns='http://jabber.org/protocol/muc#user'><status code='100'/><item role='participant' jid='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' affiliation='none'/><status code='110'/></x></presence>"
+          },
+          {
+            "type": "send",
+            "time": 1620689955.916839,
+            "opcode": 1,
+            "data": "<iq id=\"fb582c8f-2f05-4e0e-b97d-5ba27f68fba7:sendIQ\" to=\"newroom@muc.meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><query xmlns=\"http://jabber.org/protocol/disco#info\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689955.921197,
+            "opcode": 1,
+            "data": "<message xmlns='jabber:client' from='conferenceduration.meet.jitsi' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG'><json-message xmlns='http://jitsi.org/jitmeet'>{&quot;type&quot;:&quot;conference_duration&quot;,&quot;created_timestamp&quot;:1620689955000}</json-message></message>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689955.928892,
+            "opcode": 1,
+            "data": "<message xmlns='jabber:client' from='newroom@muc.meet.jitsi' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' type='groupchat'><subject/></message>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689955.9335608,
+            "opcode": 1,
+            "data": "<presence xmlns='jabber:client' from='newroom@muc.meet.jitsi/3e40c345' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG'><stats-id>Antonetta-6XB</stats-id><videomuted xmlns='http://jitsi.org/jitmeet/video'>false</videomuted><c xmlns='http://jabber.org/protocol/caps' ver='ZYz/Bk0YZmQuoeSFs25VOxJYXf4=' node='http://jitsi.org/jitsimeet' hash='sha-1'/><features><feature var='https://jitsi.org/meet/e2ee'/></features><jitsi_participant_codecType>vp8</jitsi_participant_codecType><nick xmlns='http://jabber.org/protocol/nick'>skott</nick><jitsi_participant_e2ee.idKey>qbrkQxNkyYZSkm+PFRAJ1m+NW51+Xtq4d1ib73K0cH8</jitsi_participant_e2ee.idKey><audiomuted xmlns='http://jitsi.org/jitmeet/audio'>false</audiomuted><videoType xmlns='http://jitsi.org/jitmeet/video'>camera</videoType><x xmlns='http://jabber.org/protocol/muc#user'><item role='moderator' jid='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' affiliation='owner'><actor nick='focus'/></item><status code='110'/></x></presence>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689956.052935,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='newroom@muc.meet.jitsi' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' type='result' id='fb582c8f-2f05-4e0e-b97d-5ba27f68fba7:sendIQ'><query xmlns='http://jabber.org/protocol/disco#info'><feature var='muc_unmoderated'/><feature var='muc_nonanonymous'/><feature var='http://jabber.org/protocol/muc#request'/><identity name='newroom' category='conference' type='text'/><feature var='muc_unsecured'/><feature var='muc_open'/><feature var='muc_temporary'/><feature var='muc_hidden'/><feature var='jabber:iq:register'/><feature var='http://jabber.org/protocol/muc'/><feature var='http://jabber.org/protocol/muc#stable_id'/><feature var='http://jabber.org/protocol/muc#self-ping-optimization'/><x xmlns='jabber:x:data' type='result'><field var='FORM_TYPE' type='hidden'><value>http://jabber.org/protocol/muc#roominfo</value></field><field var='muc#roomconfig_changesubject' type='boolean'/><field var='muc#roomconfig_roomname' label='Title' type='text-single'/><field var='{http://prosody.im/protocol/muc}roomconfig_allowmemberinvites' label='Allow members to invite new members' type='boolean'><value>0</value></field><field var='muc#roominfo_occupants' label='Number of occupants' type='text-single'><value>2</value></field><field var='muc#roominfo_description' label='Description' type='text-single'><value/></field><field var='muc#roominfo_meetingId' label='The meeting unique id.' type='text-single'><value>4488422b-1a51-43f7-96e6-eabac0904044</value></field><field var='muc#roominfo_lang' type='text-single'><value/></field></x></query></iq>"
+          },
+          {
+            "type": "send",
+            "time": 1620689964.4754329,
+            "opcode": 1,
+            "data": "<iq id=\"56837dd2-dfe6-46e4-a364-011af2659082:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689964.5070298,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' type='result' id='56837dd2-dfe6-46e4-a364-011af2659082:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689974.475844,
+            "opcode": 1,
+            "data": "<iq id=\"b112b7a8-7cf9-48e4-bf42-396d4dd04297:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689974.5085127,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' type='result' id='b112b7a8-7cf9-48e4-bf42-396d4dd04297:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689984.475093,
+            "opcode": 1,
+            "data": "<iq id=\"0103db72-5d71-4cee-aa1f-6a5027e88b7a:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689984.514834,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' type='result' id='0103db72-5d71-4cee-aa1f-6a5027e88b7a:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620689994.475654,
+            "opcode": 1,
+            "data": "<iq id=\"dfb8dc89-9d22-44c6-ad28-0a25cd3355c6:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620689994.5068598,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' type='result' id='dfb8dc89-9d22-44c6-ad28-0a25cd3355c6:sendIQ'/>"
+          },
+          {
+            "type": "send",
+            "time": 1620690004.4749928,
+            "opcode": 1,
+            "data": "<iq id=\"dcc1deb3-b02a-4b13-b2cc-9f827b80d0d1:sendIQ\" to=\"meet.jitsi\" type=\"get\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>"
+          },
+          {
+            "type": "receive",
+            "time": 1620690004.5055578,
+            "opcode": 1,
+            "data": "<iq xmlns='jabber:client' from='meet.jitsi' to='3e40c345-a173-4c30-9a06-5de3e72c4ac7@guest.meet.jitsi/i39EGPMG' type='result' id='dcc1deb3-b02a-4b13-b2cc-9f827b80d0d1:sendIQ'/>"
+          }
+        ],
+        "cache": {},
+        "pageref": "page_3",
+        "request": {
+          "method": "GET",
+          "url": "wss://meet.testing-14.madrubyscience.com/xmpp-websocket?room=newroom",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Origin",
+              "value": "https://meet.testing-14.madrubyscience.com"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Host",
+              "value": "meet.testing-14.madrubyscience.com"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "Sec-WebSocket-Key",
+              "value": "3mck/kk5GE0XyJHRv7NdNQ=="
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+            },
+            {
+              "name": "Upgrade",
+              "value": "websocket"
+            },
+            {
+              "name": "Sec-WebSocket-Extensions",
+              "value": "permessage-deflate; client_max_window_bits"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Cookie",
+              "value": "biscuit=test; user=skott; pass=1103122875"
+            },
+            {
+              "name": "Connection",
+              "value": "Upgrade"
+            },
+            {
+              "name": "Sec-WebSocket-Version",
+              "value": "13"
+            },
+            {
+              "name": "Sec-WebSocket-Protocol",
+              "value": "xmpp"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "room",
+              "value": "newroom"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "biscuit",
+              "value": "test",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "user",
+              "value": "skott",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "pass",
+              "value": "1103122875",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 689,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 101,
+          "statusText": "Switching Protocols",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Mon, 10 May 2021 23:39:14 GMT"
+            },
+            {
+              "name": "Sec-WebSocket-Accept",
+              "value": "GVF7CQL38hrM9G4I0gWE2/CFuEk="
+            },
+            {
+              "name": "Server",
+              "value": "nginx/1.14.2"
+            },
+            {
+              "name": "Connection",
+              "value": "upgrade"
+            },
+            {
+              "name": "Sec-WebSocket-Protocol",
+              "value": "xmpp"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=63072000"
+            },
+            {
+              "name": "Upgrade",
+              "value": "websocket"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "x-unknown",
+            "compression": 263
+          },
+          "redirectURL": "",
+          "headersSize": 263,
+          "bodySize": -263,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "",
+        "startedDateTime": "2021-05-10T23:39:14.287Z",
+        "time": 50218.05299993139,
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 50218.05299993139,
+          "receive": 0,
+          "_blocked_queueing": -1
+        }
+      }
+    ]
+  }
+}
