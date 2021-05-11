@@ -1,4 +1,6 @@
 {
-    "service": "wss://example.com/xmpp-websocket",
-    "domain": "example.com"
+    "service": "wss://meet.testing-14.madrubyscience.com/xmpp-websocket",
+    "domain": "meet.jitsi",
+    "connectUser": "skotosadmin",
+    "connectPassword": "S00perS3krit"
 }
