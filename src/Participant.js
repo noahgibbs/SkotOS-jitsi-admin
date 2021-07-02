@@ -76,22 +76,24 @@ export default class Participant extends EventEmitter {
     async _inviteJicofo() {
         console.log(`${this} is inviting jicofo to the room`);
         const { focus, room, muc } = this._config;
-        const iq = '<iq to="' + focus + '" type="set" xmlns="jabber:client">' +
-            '<conference machine-uid="' + this._machineID + '" room="' + room + '@' + muc + '" ' +
-            'xmlns="http://jitsi.org/protocol/focus">' +
-                    '<property name="channelLastN" value="-1"/>"' +
-                    '<property name="disableRtx" value="false"/>"' +
-                    '<property name="enableTcc" value="true"/>"' +
-                    '<property name="enableRemb" value="true"/>"' +
-                    '<property name="enableLipSync" value="false"/>"' +
-                    '<property name="startBitrate" value="800"/>"' +
-                    '<property name="octo" value="true"/>"' +
-                    '<property name="openSctp" value="false"/>"' +
-                    '<property name="startAudioMuted" value="999"/>"' +
-                    '<property name="startVideoMuted" value="999"/>"' +
-                    '<property name="stereo" value="true"/>"' +
-                    '<property name="useRoomAsSharedDocumentName" value="false"/>"' +
-            '</conference></iq>';
+        const iq = <iq to = { focus } type="set" xmlns="jabber:client">
+            <conference machine-uid = { this._machineID }
+                room = { `${room}@${muc}` }
+                xmlns="http://jitsi.org/protocol/focus">
+                    <property name="channelLastN" value="-1"/>
+                    <property name="disableRtx" value="false"/>
+                    <property name="enableTcc" value="true"/>
+                    <property name="enableRemb" value="true"/>
+                    <property name="enableLipSync" value="false"/>
+                    <property name="startBitrate" value="800"/>
+                    <property name="octo" value="true"/>
+                    <property name="openSctp" value="false"/>
+                    <property name="startAudioMuted" value="999"/>
+                    <property name="startVideoMuted" value="999"/>
+                    <property name="stereo" value="true"/>
+                    <property name="useRoomAsSharedDocumentName" value="false"/>
+            </conference>
+        </iq>;
         try {
             await this._xmpp.iqCaller.request(iq, 30000 );
         } catch (error) {
@@ -103,8 +105,8 @@ export default class Participant extends EventEmitter {
         const { focus, room, muc } = this._config;
         console.log(`${this} is joining!`);
         try {
-            await this._xmpp.send(`<presence
-                to ="${ this._mucJID }"
+            await this._xmpp.send(<presence
+                to = { this._mucJID }
                 xmlns="jabber:client">
                     <x xmlns="http://jabber.org/protocol/muc"/>
                     <stats-id>Adeline-2mY</stats-id>
@@ -116,7 +118,7 @@ export default class Participant extends EventEmitter {
                     <audiomuted xmlns="http://jitsi.org/jitmeet/audio">false</audiomuted>
                     <videoType xmlns="http://jitsi.org/jitmeet/video">camera</videoType>
                     <videomuted xmlns="http://jitsi.org/jitmeet/video">false</videomuted>
-                </presence>`);
+                </presence>);
         } catch (error) {
             console.error()
 
@@ -139,19 +141,19 @@ export default class Participant extends EventEmitter {
                 generateSsrc()
             ]
         };
-        const sessionAccept = `<iq to ="${ iq.attrs.from }" type="set" xmlns="jabber:client">
+        const sessionAccept = <iq to = { iq.attrs.from } type="set" xmlns="jabber:client">
             <jingle
                 action="session-accept"
-                initiator="${ iq.attrs.from }"
-                responder="${ this._jid }"
-                sid ="${ jingle.attrs.sid }"
+                initiator = { iq.attrs.from }
+                responder = { this._jid }
+                sid = { jingle.attrs.sid }
                 xmlns="urn:xmpp:jingle:1">
                 <group semantics="BUNDLE" xmlns="urn:xmpp:jingle:apps:grouping:0">
                     <content name="audio"/>
                     <content name="video"/>
                 </group>
                 <content creator="responder" name="audio" senders="both">
-                    <description media="audio" ssrc="${ ssrc.audio }" xmlns="urn:xmpp:jingle:apps:rtp:1">
+                    <description media="audio" ssrc={ ssrc.audio } xmlns="urn:xmpp:jingle:apps:rtp:1">
                         <payload-type channels="2" clockrate="48000" id="111" name="opus">
                             <parameter name="minptime" value="10"/>
                             <parameter name="useinbandfec" value="1"/>
@@ -160,9 +162,9 @@ export default class Participant extends EventEmitter {
                         <payload-type channels="1" clockrate="16000" id="103" name="ISAC"/>
                         <payload-type channels="1" clockrate="32000" id="104" name="ISAC"/>
                         <payload-type channels="1" clockrate="8000" id="126" name="telephone-event"/>
-                        <source ssrc=$"{ ssrc.audio }" xmlns="urn:xmpp:jingle:apps:rtp:ssma:0">
-                            <parameter name="cname" value="${ `cname-${this._id}` }" />
-                            <parameter name="msid" value="${ `audio-stream-${this._id}" audio-track-${this._id}` }/>
+                        <source ssrc={ ssrc.audio } xmlns="urn:xmpp:jingle:apps:rtp:ssma:0">
+                            <parameter name="cname" value={ `cname-${this._id}` } />
+                            <parameter name="msid" value={ `audio-stream-${this._id} audio-track-${this._id}` }/>
                         </source>
                         <rtcp-mux/>
                         <rtp-hdrext id="1" uri="urn:ietf:params:rtp-hdrext:ssrc-audio-level" xmlns="urn:xmpp:jingle:apps:rtp:rtp-hdrext:0"/>
@@ -186,45 +188,45 @@ export default class Participant extends EventEmitter {
                             <parameter name="apt" value="100"/>
                         </payload-type>
                         <source ssrc={ ssrc.video[0] } xmlns="urn:xmpp:jingle:apps:rtp:ssma:0">
-                            <parameter name="cname" value="cname-${this._id}"/>
-                            <parameter name="msid" value="video-stream-${this._id} video-track-${this._id}"/>
+                            <parameter name="cname" value={`cname-${this._id}`}/>
+                            <parameter name="msid" value={`video-stream-${this._id} video-track-${this._id}`}/>
                         </source>
                         <source ssrc={ ssrc.video[1] } xmlns="urn:xmpp:jingle:apps:rtp:ssma:0">
-                            <parameter name="cname" value="cname-${ this._id }"/>
-                            <parameter name="msid" value="video-stream-${this._id} video-track-${this._id}"/>
+                            <parameter name="cname" value={ `cname-${this._id}` }/>
+                            <parameter name="msid" value={ `video-stream-${this._id} video-track-${this._id}` }/>
                         </source>
                         <source ssrc={ ssrc.video[2] } xmlns="urn:xmpp:jingle:apps:rtp:ssma:0">
-                            <parameter name="cname" value="cname-${this._id}"/>
-                            <parameter name="msid" value="video-stream-${this._id} video-track-${this._id}"/>
+                            <parameter name="cname" value={ `cname-${this._id}` }/>
+                            <parameter name="msid" value={ `video-stream-${this._id} video-track-${this._id}` }/>
                         </source>
                         <source ssrc={ ssrc.video[3] } xmlns="urn:xmpp:jingle:apps:rtp:ssma:0">
-                            <parameter name="cname" value="cname-${this._id}"/>
-                            <parameter name="msid" value="video-stream-${this._id} video-track-${this._id}"/>
+                            <parameter name="cname" value={ `cname-${this._id}` }/>
+                            <parameter name="msid" value={ `video-stream-${this._id} video-track-${this._id}` }/>
                         </source>
                         <source ssrc={ ssrc.video[4] } xmlns="urn:xmpp:jingle:apps:rtp:ssma:0">
-                            <parameter name="cname" value="cname-${this._id}"/>
-                            <parameter name="msid" value="video-stream-${this._id} video-track-${this._id}"/>
+                            <parameter name="cname" value={ `cname-${this._id}` }/>
+                            <parameter name="msid" value={ `video-stream-${this._id} video-track-${this._id}` }/>
                         </source>
                         <source ssrc={ ssrc.video[5] } xmlns="urn:xmpp:jingle:apps:rtp:ssma:0">
-                            <parameter name="cname" value="cname-${this._id}"/>
-                            <parameter name="msid" value="video-stream-${this._id} video-track-${this._id}"/>
+                            <parameter name="cname" value={ `cname-${this._id}` }/>
+                            <parameter name="msid" value={ `video-stream-${this._id} video-track-${this._id}` }/>
                         </source>
                         <ssrc-group semantics="FID" xmlns="urn:xmpp:jingle:apps:rtp:ssma:0">
-                            <source ssrc="${ ssrc.video[0] }"/>
-                            <source ssrc="${ ssrc.video[1] }"/>
+                            <source ssrc={ ssrc.video[0] }/>
+                            <source ssrc={ ssrc.video[1] }/>
                             </ssrc-group>
                         <ssrc-group semantics="FID" xmlns="urn:xmpp:jingle:apps:rtp:ssma:0">
-                            <source ssrc="${ ssrc.video[2] }"/>
-                            <source ssrc="${ ssrc.video[4] }"/>
+                            <source ssrc={ ssrc.video[2] }/>
+                            <source ssrc={ ssrc.video[4] }/>
                         </ssrc-group>
                         <ssrc-group semantics="FID" xmlns="urn:xmpp:jingle:apps:rtp:ssma:0">
-                            <source ssrc="${ ssrc.video[3] }"/>
-                            <source ssrc="${ ssrc.video[5] }"/>
+                            <source ssrc={ ssrc.video[3] }/>
+                            <source ssrc={ ssrc.video[5] }/>
                         </ssrc-group>
                         <ssrc-group semantics="SIM" xmlns="urn:xmpp:jingle:apps:rtp:ssma:0">
-                            <source ssrc="${ ssrc.video[0] }"/>
-                            <source ssrc="${ ssrc.video[2] }"/>
-                            <source ssrc="${ ssrc.video[3] }"/>
+                            <source ssrc={ ssrc.video[0] }/>
+                            <source ssrc={ ssrc.video[2] }/>
+                            <source ssrc={ ssrc.video[3] }/>
                         </ssrc-group>
                         <rtcp-mux/>
                         <rtp-hdrext id="3" uri="http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time" xmlns="urn:xmpp:jingle:apps:rtp:rtp-hdrext:0"/>
@@ -235,7 +237,7 @@ export default class Participant extends EventEmitter {
                     </transport>
                 </content>
             </jingle>
-        </iq>`;
+        </iq>;
 
         try{
             console.log(`${this} sends session accept`);
@@ -272,9 +274,9 @@ export default class Participant extends EventEmitter {
 
     _sendPing() {
         try {
-            this._xmpp.iqCaller.request(`<iq to="${this._config.domain}" type="get" xmlns="jabber:client">
+            this._xmpp.iqCaller.request(<iq  to={this._config.domain} type="get" xmlns="jabber:client">
                 <ping xmlns="urn:xmpp:ping"/>
-            </iq>`, 30000).then(() => {
+            </iq>, 30000).then(() => {
                 // count the ping responses for the stream management so we can ack them
                 this._xmpp.streamManagement.inbound += 1;
             });
@@ -291,8 +293,8 @@ export default class Participant extends EventEmitter {
         console.log(`${this} is disconnecting`);
         this._stopPing();
         try {
-            await this._xmpp.send(`<presence from="${this._jid} to="{ this._mucJID } type = 'unavailable'/>`);
-            await this._xmpp.send(`<presence type="unavailable" />`);
+            await this._xmpp.send(<presence from = { this._jid } to={ this._mucJID } type = 'unavailable'/>);
+            await this._xmpp.send(<presence type = "unavailable" />);
         } catch (error) {
             console.error(error);
         }

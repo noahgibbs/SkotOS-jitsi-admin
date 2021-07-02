@@ -4,9 +4,6 @@ module.exports = {
     mode: 'production',
     entry: './src/index.js',
     target: 'node',
-    optimization: {
-        minimize: false,
-    },
     module: {
         rules: [
             { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
