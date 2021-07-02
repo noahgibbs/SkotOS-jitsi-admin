@@ -7,6 +7,8 @@ const fs = require('fs');
 const configObject = JSON.parse(fs.readFileSync(path.resolve(process.argv[2])));
 const service = configObject.service;
 const domain = configObject.domain;
+const username = configObject.username;
+const password = configObject.password;
 const muc = `conference.${domain}`;
 const focus = `focus.${domain}`;
 const roomPrefix = 'jxs-test-' + Date.now() + randomInt(0, 10000);
@@ -33,6 +35,8 @@ for (let j = 0; j < numberOfRooms; j++) {
             service,
             domain,
             room: roomName,
+            username,
+            password,
             // enableDebug: true,
             focus,
             muc

@@ -11,9 +11,11 @@ export default class Participant extends EventEmitter {
         super();
         this._id = id++;
         this._config = config;
-        const { service, room, domain, enableDebug = false } = this._config;
+        const { service, room, domain, username, password, enableDebug = false } = this._config;
         this._xmpp = client({
-            service: `${service}?room=${room}`,
+            service,
+            username,
+            password,
             domain
         });
 
