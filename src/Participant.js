@@ -76,24 +76,26 @@ export default class Participant extends EventEmitter {
     async _inviteJicofo() {
         console.log(`${this} is inviting jicofo to the room`);
         const { focus, room, muc } = this._config;
-        const iq = <iq to = { focus } type="set" xmlns="jabber:client">
-            <conference machine-uid = { this._machineID }
-                room = { `${room}@${muc}` }
-                xmlns="http://jitsi.org/protocol/focus">
-                    <property name="channelLastN" value="-1"/>
-                    <property name="disableRtx" value="false"/>
-                    <property name="enableTcc" value="true"/>
-                    <property name="enableRemb" value="true"/>
-                    <property name="enableLipSync" value="false"/>
-                    <property name="startBitrate" value="800"/>
-                    <property name="octo" value="true"/>
-                    <property name="openSctp" value="false"/>
-                    <property name="startAudioMuted" value="999"/>
-                    <property name="startVideoMuted" value="999"/>
-                    <property name="stereo" value="true"/>
-                    <property name="useRoomAsSharedDocumentName" value="false"/>
-            </conference>
-        </iq>;
+
+    const iq = xml("iq", { to: focus, type: "set", xmlns: "jabber:client" },
+        xml("conference",
+            {
+                "machine-uid": this._machineID,
+                room: `${room}@${muc}`,
+                xmlns: "http://jitsi.org/protocol/focus"
+            },
+            xml("property", { name: "channelLastN", value: "-1" }),
+            xml("property", { name: "disableRtx", value: "false" }),
+            xml("property", { name: "enableTcc", value: "true" }),
+            xml("property", { name: "enableRemb", value: "true" }),
+            xml("property", { name: "enableLipSync", value: "false" }),
+            xml("property", { name: "startBitrate", value: "800" }),
+            xml("property", { name: "octo", value: "true" }),
+            xml("property", { name: "openSctp", value: "false" }),
+            xml("property", { name: "startAudioMuted", value: "999" }),
+            xml("property", { name: "startVideoMuted", value: "999" }),
+            xml("property", { name: "stereo", value: "true" }),
+            xml("property", { name: "useRoomAsSharedDocumentName", value: "false" })));
         try {
             await this._xmpp.iqCaller.request(iq, 30000 );
         } catch (error) {
