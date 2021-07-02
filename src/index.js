@@ -1,5 +1,6 @@
 
-
+// Permit self-signed certificates, like the one used by Jitsi's Docker config
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
 
 import Participant from './Participant';
 import { randomInt } from './util';
