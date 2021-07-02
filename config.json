@@ -1,5 +1,5 @@
 {
-    "service": "wss://meet.testing-14.madrubyscience.com/xmpp-websocket",
+    "service": "xmpp://meet.testing-14.madrubyscience.com:5223",
     "domain": "meet.jitsi",
     "connectUser": "skotosadmin",
     "connectPassword": "S00perS3krit"
