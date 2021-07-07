@@ -16,23 +16,17 @@ You can find the build in `dist/`. There's only one bundled file there - `main.j
 
 ## Running
 
-Note: UPDATE THIS SECTION
-
 ```
 npm start <path_to_config_json> <number_of_conferences> <number_of_participants_per_conference>
 ```
 
-or
-
-```
-node dist/main.js <path_to_config_json> <number_of_conferences> <number_of_participants_per_conference>
-```
+For example: "npm start config.json 1 1" -- but only after you've set up config.json properly.
 
 ### Config.json
 
-Note: UPDATE THIS SECTION
-
 You must specify the path to a `config.json` file as a first argument of the app. We read the following properties from there:
- - service - required. This will be a service URL to the xmpp server that we use.
- - domain - required. The domain of the xmpp server.
-
+ - service - required. This will be a service URL to the xmpp server. I've had the best luck with xmpp protocol, not BOSH or Websockets.
+ - domain - required. The domain of the xmpp server. Docker-installed jitsi nearly always uses jitsi.meet.
+ - username - required. The XMPP username.
+ - password - required. The XMPP password.
+ - debug - optional. If true, print debug messages.
