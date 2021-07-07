@@ -107,20 +107,30 @@ export default class Participant extends EventEmitter {
         const { focus, room, muc } = this._config;
         console.log(`${this} is joining!`);
         try {
-            await this._xmpp.send(<presence
-                to = { this._mucJID }
-                xmlns="jabber:client">
-                    <x xmlns="http://jabber.org/protocol/muc"/>
-                    <stats-id>Adeline-2mY</stats-id>
-                    <region id="us-east-1" xmlns="http://jitsi.org/jitsi-meet"/>
-                    <c hash="sha-1" node="http://jitsi.org/jitsimeet" ver="cvjWXufsg4xT62Ec2mlATkFZ9lk=" xmlns="http://jabber.org/protocol/caps"/>
-                    <jitsi_participant_region>us-east-1</jitsi_participant_region>
-                    <avatar-id>e8b7ee7bbac3a53f14a711b538526bf3</avatar-id>
-                    <nick xmlns="http://jabber.org/protocol/nick"/>
-                    <audiomuted xmlns="http://jitsi.org/jitmeet/audio">false</audiomuted>
-                    <videoType xmlns="http://jitsi.org/jitmeet/video">camera</videoType>
-                    <videomuted xmlns="http://jitsi.org/jitmeet/video">false</videomuted>
-                </presence>);
+            await this._xmpp.send(
+                Object(client["xml"])("presence", {
+                    to: this._mucJID,
+                    xmlns: "jabber:client"
+                }, Object(client["xml"])("x", {
+                    xmlns: "http://jabber.org/protocol/muc"
+                }), Object(client["xml"])("stats-id", null, "Adeline-2mY"), Object(client["xml"])("region", {
+                    id: "us-east-1",
+                    xmlns: "http://jitsi.org/jitsi-meet"
+                }), Object(client["xml"])("c", {
+                    hash: "sha-1",
+                    node: "http://jitsi.org/jitsimeet",
+                    ver: "cvjWXufsg4xT62Ec2mlATkFZ9lk=",
+                    xmlns: "http://jabber.org/protocol/caps"
+                }), Object(client["xml"])("jitsi_participant_region", null, "us-east-1"), Object(client["xml"])("avatar-id", null, "e8b7ee7bbac3a53f14a711b538526bf3"), Object(client["xml"])("nick", {
+                    xmlns: "http://jabber.org/protocol/nick"
+                }), Object(client["xml"])("audiomuted", {
+                    xmlns: "http://jitsi.org/jitmeet/audio"
+                }, "false"), Object(client["xml"])("videoType", {
+                    xmlns: "http://jitsi.org/jitmeet/video"
+                }, "camera"), Object(client["xml"])("videomuted", {
+                    xmlns: "http://jitsi.org/jitmeet/video"
+                }, "false")));
+
         } catch (error) {
             console.error()
 
