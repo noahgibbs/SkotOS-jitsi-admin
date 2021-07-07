@@ -1,7 +1,7 @@
 {
-    "service": "xmpp://meet.testing-14.madrubyscience.com:5223",
+    "service": "xmpp://meet.testing-14.madrubyscience.com:5223/",
     "domain": "meet.jitsi",
-    "connectUser": "skotosadmin",
-    "connectPassword": "S00perS3krit",
-    "enableDebug": true
+    "username": "skotosadmin",
+    "password": "S00perS3krit",
+    "debug": true
 }
